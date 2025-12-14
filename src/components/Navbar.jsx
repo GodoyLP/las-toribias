@@ -1,6 +1,7 @@
 import telefonoGif from '../image/call-phone-hover-phone-ring.gif';
 import watsappGif from '../image/whatsapp-hover-pinch.gif';
 
+
 const Navbar = () => {
     return (
         <>
@@ -11,7 +12,7 @@ const Navbar = () => {
                     </button>
 
                     {/* Centramos el brand con mx-auto */}
-                    <a className="navbar-brand mx-auto" href="#">Las Toribias</a>
+                    <a className="navbar-brand mx-auto " href="/"> <h1 class="parisienne-regular tex-dark text-aling-center ms-3 mt-3"> Las Toribias </h1></a>
                     
                     {/* Contenedor para los íconos y el teléfono. Se centra en móvil y se alinea a la derecha en desktop. */}
                     <div className="d-flex flex-row align-items-center ms-auto ms-lg-0 order-lg-3">
