@@ -141,6 +141,7 @@
     z-index: 2;
     /* Detrás de la foto y el anuncio */
 }
+
 /*
 #circle2::after {
     width: 12rem;
@@ -203,11 +204,13 @@
 
 .container-card {
     margin-top: 12rem;
-    padding: 20px;    
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centra las tarjetas horizontalmente */
-    gap: 25px; /* Espacio entre tarjetas */
+    justify-content: center;
+    /* Centra las tarjetas horizontalmente */
+    gap: 25px;
+    /* Espacio entre tarjetas */
 }
 
 /* Media query para dispositivos móviles */
@@ -221,23 +224,34 @@
     .ciculo-foto {
         width: 16rem;
         height: 16rem;
-        border: 20px solid blue;
+        border: 20px solid #F1C50E;
         top: 40%;
         left: -50%;
         /* Lo posicionamos fuera de la pantalla a la izquierda */
     }
 
     .ciculo-foto::after {
-        width: 20%;
-        height: 20%;
-        bottom: -8%;
+        width: 30%;
+        height: 30%;
+        bottom: -15%;
         left: 25%;
 
     }
 
+    #circle1::after {
+        width: 6rem;
+        height: 6rem;
+        background-color: #292D33;
+        border: 25px solid #555C66;
+        top: 0%;
+        left: 86%;
+        transform: translateX(-50%);
+        z-index: 2;
+        /* Detrás de la foto y el anuncio */
+    }
+
     .container-ciculo {
         padding-top: 20rem;
-    
         height: 80%;
     }
 
@@ -247,14 +261,16 @@
         flex-direction: column;
         /* Cambia la dirección del flex a columna */
         align-items: center;
-        height: auto; /* Permite que el contenedor crezca */
+        height: auto;
+        /* Permite que el contenedor crezca */
         /* Centra las tarjetas cuando están apiladas */
     }
 
     .anuncio {
         display: none;
     }
-    .anuncio-baner{
+
+    .anuncio-baner {
         border-radius: 10%;
     }
 
@@ -270,7 +286,8 @@
     align-items: center;
     width: 350px;
     height: 460px;
-    margin-bottom: 20px; /* Añade margen inferior en móvil */
+    margin-bottom: 20px;
+    /* Añade margen inferior en móvil */
     background: #fff;
     border-radius: 15px;
     text-align: center;
