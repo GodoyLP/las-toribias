@@ -33,6 +33,7 @@
     /* Lo posicionamos fuera de la pantalla a la izquierda */
     transform: translateY(-50%);
     animation: move-right 3s linear forwards;
+    z-index: 5; /* Asegura que la foto esté por encima de los círculos */
     /* Aplica la animación de 3 segundos */
 }
 
@@ -83,7 +84,7 @@
 
 /* Creamos el círculo amarillo usando un pseudo-elemento */
 .container-ciculo {
-    background-color: #ffd700; /* Restaurado a amarillo */
+     /* Restaurado a amarillo */
     position: relative;
     margin-top: 2rem; /* Corregido y ajustado */
     width: 95%;
@@ -132,7 +133,7 @@
     top: 4%;
     left: 65%;
     transform: translateX(-50%);
-    z-index: 1; /* Detrás del anuncio */
+    z-index: 2; /* Detrás de la foto y el anuncio */
 }
 
 #circle2::after {
@@ -157,12 +158,12 @@
 }
 
 #circle4::after {
-    width: 11rem;
-    height: 11rem;
-    background-color:antiquewhite;
-    border: 2px solid whitesmoke;
-    bottom: -6%;
-    left: 15%;
+    width: 7rem;
+    height: 7rem;
+    background-color:whitesmoke;
+    border: 40px solid  antiquewhite;
+    bottom: 19%;
+    left: 25%;
     transform: translateX(-50%);
 }
 
@@ -194,10 +195,11 @@
 
     }
 .container-card {
-        margin-top: 5rem;
+        margin-top: 12rem;
         padding: 20px;;
         
         width: auto;
+        height: 25rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -239,6 +241,7 @@
 
     .container-card {
         margin-top: 20px;
+        padding-top: 50px;
         background-color: greenyellow;
         flex-direction: column;
         /* Cambia la dirección del flex a columna */
@@ -254,7 +257,7 @@
 
 
 /******card*******/
-
+/*
 * {
     margin: 0;
     padding: 0;
@@ -267,14 +270,14 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #fff;
-}
+}*/
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 360px;
+    width: 350px;
+    height: 460px;
     margin: 0 25px;
     background: #fff;
     border-radius: 15px;

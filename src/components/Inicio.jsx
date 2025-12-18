@@ -10,7 +10,7 @@ const Inicio = () => {
                 <div className="container-ciculo col-auto  ">
 
                     <div className="ciculo-foto" ></div>
-                    <div  id="circle1"></div> {/* Este div parece no tener un pseudo-elemento ::after definido en el CSS, pero lo mantengo por si lo usas más adelante */}
+                    <div id="circle1"></div> {/* Este div parece no tener un pseudo-elemento ::after definido en el CSS, pero lo mantengo por si lo usas más adelante */}
                     <div id="circle2"></div> {/* Este es el div que tiene el ::after para el círculo azul */}
                     <div className="anuncio border border-dark border-5" >
                         <h5 className="text-left ">Merlo San Luis</h5>
@@ -21,7 +21,6 @@ const Inicio = () => {
                     <div id="circle3"></div>
                     <div id="circle4"></div>
                 </div>
-
                 <div className="anuncio-baner border border-dark border-5" >
                     <h5 className="text-center p-2">Merlo San Luis</h5>
                     <p className="text-left p-2">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate!". </p>
@@ -29,13 +28,10 @@ const Inicio = () => {
                         <button className="btn btn-primary border rounded-pill p-2">Reserva tu lugar</button>
                     </div>
                 </div>
-
                 <div className="container-card  d-flex justify-content-evenly ">
-
-
                     <div class="card">
                         <h2 class="title">
-                            <a href="#">New York</a>
+                            <a href="#">Toribia I</a>
                         </h2>
                         <p class="text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
@@ -50,7 +46,7 @@ const Inicio = () => {
                     </div>
                     <div class="card">
                         <h2 class="title">
-                            <a href="#">Tokyo</a>
+                            <a href="#">Jardin</a>
                         </h2>
                         <p class="text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
@@ -66,7 +62,7 @@ const Inicio = () => {
 
                     <div class="card">
                         <h2 class="title">
-                            <a href="#">Tokyo</a>
+                            <a href="#">Toribia II</a>
                         </h2>
                         <p class="text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
