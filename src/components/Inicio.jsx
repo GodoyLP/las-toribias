@@ -6,7 +6,7 @@ import React from 'react';
 const Inicio = () => {
     return (
         <>
-            <main className="main d-sm-flex flex-md-column p-2 bg-secondary mb-2">
+            <main className="main d-sm-flex flex-md-column p-2  mb-2">
                 <div className="container-ciculo col-auto  ">
 
                     <div className="ciculo-foto" ></div>
@@ -37,7 +37,7 @@ const Inicio = () => {
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
                         </p>
                         <div class="imgBox">
-                            <img src="https://images.unsplash.com/photo-1473167052083-3d31fa1f6776?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODQwNzU4ODl8&ixlib=rb-4.0.3&q=85" alt="New York Photo" />
+                            <img src="https://i.pinimg.com/736x/87/f6/37/87f637ba75e58f5b731349a51da0fa65.jpg" alt="New York Photo" />
                             <div class="img-blur">
                                 <a href="#">Visitar </a>
                             </div>
@@ -52,7 +52,7 @@ const Inicio = () => {
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
                         </p>
                         <div class="imgBox">
-                            <img src="https://images.unsplash.com/photo-1604604994333-f1b0e9471186?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODQwNzU5NzR8&ixlib=rb-4.0.3&q=85" alt="New York Photo" />
+                            <img src="https://i.pinimg.com/736x/93/ae/18/93ae18b22670f5291f9b7e92041c29c9.jpg" alt="New York Photo" />
                             <div class="img-blur">
                                 <a href="#">Visitar </a>
                             </div>
@@ -62,13 +62,14 @@ const Inicio = () => {
 
                     <div class="card">
                         <h2 class="title">
-                            <a href="#">Toribia II</a>
+                            <a href="#">Toribia II </a>
                         </h2>
+                        <div class="bg-gray-500" h-1  ></div>           
                         <p class="text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
                         </p>
                         <div class="imgBox">
-                            <img src="https://images.unsplash.com/photo-1604604994333-f1b0e9471186?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODQwNzU5NzR8&ixlib=rb-4.0.3&q=85" alt="New York Photo" />
+                            <img src="https://i.pinimg.com/736x/ba/ac/94/baac9460432ab5bd714ec50d1cb8d227.jpg" alt="New York Photo" />
                             <div class="img-blur">
                                 <a href="#">Visitar </a>
                             </div>

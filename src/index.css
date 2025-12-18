@@ -8,6 +8,7 @@
 
 .main {
     margin: 90px 0;
+    background-color: #292D33;
     overflow-x: hidden;
     /* Evita scroll horizontal durante la animación */
     overflow-y: auto;
@@ -26,6 +27,7 @@
     background-position: center;
     /* Centra la imagen dentro del círculo */
     /* background-color: yellow; */
+    border: 20px solid #F1C50E;
     border-radius: 50%;
     position: absolute;
     top: 53%;
@@ -33,7 +35,8 @@
     /* Lo posicionamos fuera de la pantalla a la izquierda */
     transform: translateY(-50%);
     animation: move-right 3s linear forwards;
-    z-index: 5; /* Asegura que la foto esté por encima de los círculos */
+    z-index: 5;
+    /* Asegura que la foto esté por encima de los círculos */
     /* Aplica la animación de 3 segundos */
 }
 
@@ -84,11 +87,13 @@
 
 /* Creamos el círculo amarillo usando un pseudo-elemento */
 .container-ciculo {
-     /* Restaurado a amarillo */
+    /* Restaurado a amarillo */
     position: relative;
-    margin-top: 2rem; /* Corregido y ajustado */
+    margin-top: 2rem;
+    /* Corregido y ajustado */
     width: 95%;
-    height: 28rem; /* Altura reducida y corregida */
+    height: 28rem;
+    /* Altura reducida y corregida */
     border-radius: 3%;
     margin-left: auto;
     margin-right: auto;
@@ -117,8 +122,8 @@
 .ciculo-foto::after {
     width: 8rem;
     height: 8rem;
-    background-color: #ffd700;
-    border: 30px solid #ffd700;
+    background-color: #F1C50E;
+    border: 30px solid #F1C50E;
     /* Un tono de amarillo dorado */
     bottom: -10%;
     left: 25%;
@@ -128,14 +133,15 @@
 #circle1::after {
     width: 12rem;
     height: 12rem;
-    background-color: white;
-    border: 40px solid blue;
+    background-color: #292D33;
+    border: 40px solid #555C66;
     top: 4%;
     left: 65%;
     transform: translateX(-50%);
-    z-index: 2; /* Detrás de la foto y el anuncio */
+    z-index: 2;
+    /* Detrás de la foto y el anuncio */
 }
-
+/*
 #circle2::after {
     width: 12rem;
     height: 12rem;
@@ -154,19 +160,20 @@
     bottom: 10%;
     left: 78%;
     transform: translateX(-50%);
-    z-index: 1; /* Detrás del anuncio */
+    z-index: 1;
+    /* Detrás del anuncio 
 }
 
 #circle4::after {
     width: 7rem;
     height: 7rem;
-    background-color:whitesmoke;
-    border: 40px solid  antiquewhite;
+    background-color: #292D33;
+    border: 30px solid #555C66;
     bottom: 19%;
     left: 25%;
     transform: translateX(-50%);
 }
-
+*/
 
 .anuncio {
     position: absolute;
@@ -186,26 +193,22 @@
     /* Fondo blanco para que el texto sea legible */
     /* La transformación inicial se maneja en la animación */
     transform: translateY(-50%) translateX(100vw);
-    z-index: 10; /* Asegura que esté por encima de los círculos */
+    z-index: 10;
+    /* Asegura que esté por encima de los círculos */
 }
 
- .anuncio-baner{
-
+.anuncio-baner {
     background-color: white;
+}
 
-    }
 .container-card {
-        margin-top: 12rem;
-        padding: 20px;;
-        
-        width: auto;
-        height: 25rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        
-        background-color: greenyellow;
+    margin-top: 12rem;
+    padding: 20px;
+    width: auto;
+    height: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
 }
 
 /* Media query para dispositivos móviles */
@@ -217,9 +220,9 @@
 
 @media (max-width: 768px) {
     .ciculo-foto {
-        width: 17rem;
-        height: 17rem;
-
+        width: 16rem;
+        height: 16rem;
+        border: 20px solid blue;
         top: 40%;
         left: -50%;
         /* Lo posicionamos fuera de la pantalla a la izquierda */
@@ -252,25 +255,63 @@
     .anuncio {
         display: none;
     }
-   
+
+
+    .ciculo-foto::after {
+        width: 5rem;
+        height: 5rem;
+
+        /* Un tono de amarillo dorado */
+        bottom: -10%;
+        left: 25%;
+        transform: translateX(-50%);
+    }
+
+    #circle1::after {
+        width: 5rem;
+        height: 5rem;
+        border: 20px solid blue;
+        top: 0%;
+        left: 85%;
+        transform: translateX(-50%);
+        z-index: 2;
+        /* Detrás de la foto y el anuncio */
+    }
+
+    #circle2::after {
+        width: 5rem;
+        height: 5rem;
+        border: 2px soliD blue;
+        bottom: 80%;
+        left: -5%;
+        transform: translateX(-50%);
+    }
+
+    #circle3::after {
+        width: 9rem;
+        height: 9rem;
+        border: 2px solid red;
+        bottom: 10%;
+        left: 78%;
+        transform: translateX(-50%);
+        z-index: 1;
+        /* Detrás del anuncio */
+    }
+
+    #circle4::after {
+        width: 3rem;
+        height: 3rem;
+        bottom: -3%;
+        left: 5%;
+        transform: translateX(-50%);
+    }
+
+
 }
 
 
 /******card*******/
-/*
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Poppins, sans-serif;
-}
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #fff;
-}*/
+
 .card {
     display: flex;
     flex-direction: column;
@@ -284,18 +325,22 @@ body {
     text-align: center;
     transition: 0.3s;
 }
+
 .card:hover {
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
 .card .imgBox {
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 250px;
+    border: 15px soliD #F1C50E;
     background: red;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
+
 .card .imgBox img {
     position: absolute;
     top: 0;
@@ -304,6 +349,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 .card .img-blur {
     position: absolute;
     top: 0;
@@ -317,45 +363,55 @@ body {
     opacity: 0;
     transition: 0.5s;
 }
+
 .card .imgBox:hover .img-blur {
     opacity: 1;
 }
+
 .card .img-blur a {
     text-decoration: none;
     color: #fff;
     letter-spacing: 1px;
 }
+
 .card .img-blur::before {
     content: '';
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 155px;
-    height: 155px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 2px dotted #fff;
     pointer-events: none;
     animation: border-anime 15s linear infinite;
 }
+
 @keyframes border-anime {
     from {
         transform: rotate(0);
-    } to {
+    }
+
+    to {
         transform: rotate(360deg);
     }
 }
+
 .card .title {
     margin: 15px 0;
 }
+
 .card .title a {
     font-size: 1.6rem;
     color: #555;
     text-decoration: none;
     transition: 0.4s;
 }
+
 .card .title a:hover {
     color: rgb(0, 221, 147);
 }
+
 .card .text {
     font-size: 0.8rem;
     line-height: 1.5em;
