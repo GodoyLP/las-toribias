@@ -203,12 +203,11 @@
 
 .container-card {
     margin-top: 12rem;
-    padding: 20px;
-    width: auto;
-    height: 25rem;
+    padding: 20px;    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;  
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 25px; /* Espacio entre tarjetas */
 }
 
 /* Media query para dispositivos móviles */
@@ -238,74 +237,26 @@
 
     .container-ciculo {
         padding-top: 20rem;
-        background-color: aqua;
+    
         height: 80%;
     }
 
     .container-card {
         margin-top: 20px;
-        padding-top: 50px;
-        background-color: greenyellow;
+        padding: 20px;
         flex-direction: column;
         /* Cambia la dirección del flex a columna */
         align-items: center;
+        height: auto; /* Permite que el contenedor crezca */
         /* Centra las tarjetas cuando están apiladas */
     }
 
     .anuncio {
         display: none;
     }
-
-
-    .ciculo-foto::after {
-        width: 5rem;
-        height: 5rem;
-
-        /* Un tono de amarillo dorado */
-        bottom: -10%;
-        left: 25%;
-        transform: translateX(-50%);
+    .anuncio-baner{
+        border-radius: 10%;
     }
-
-    #circle1::after {
-        width: 5rem;
-        height: 5rem;
-        border: 20px solid blue;
-        top: 0%;
-        left: 85%;
-        transform: translateX(-50%);
-        z-index: 2;
-        /* Detrás de la foto y el anuncio */
-    }
-
-    #circle2::after {
-        width: 5rem;
-        height: 5rem;
-        border: 2px soliD blue;
-        bottom: 80%;
-        left: -5%;
-        transform: translateX(-50%);
-    }
-
-    #circle3::after {
-        width: 9rem;
-        height: 9rem;
-        border: 2px solid red;
-        bottom: 10%;
-        left: 78%;
-        transform: translateX(-50%);
-        z-index: 1;
-        /* Detrás del anuncio */
-    }
-
-    #circle4::after {
-        width: 3rem;
-        height: 3rem;
-        bottom: -3%;
-        left: 5%;
-        transform: translateX(-50%);
-    }
-
 
 }
 
@@ -319,7 +270,7 @@
     align-items: center;
     width: 350px;
     height: 460px;
-    margin: 0 25px;
+    margin-bottom: 20px; /* Añade margen inferior en móvil */
     background: #fff;
     border-radius: 15px;
     text-align: center;
