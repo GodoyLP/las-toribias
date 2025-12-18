@@ -1,18 +1,21 @@
+import { Link } from 'react-router-dom';
 import telefonoGif from '../image/call-phone-hover-phone-ring.gif';
 import watsappGif from '../image/whatsapp-hover-pinch.gif';
 
 
 const Navbar = () => {
     return (
-        <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <header>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    {/* Centramos el brand con mx-auto */}
-                    <a className="navbar-brand mx-auto " href="/"> <h1 class="parisienne-regular tex-dark text-aling-center ms-3 mt-3"> Las Toribias </h1></a>
+                    <Link className="navbar-brand mx-auto" to="/">
+                        <h1 className="parisienne-regular text-dark text-center ms-3 mt-3">Las Toribias</h1>
+                    </Link>
+                    
                     
                     {/* Contenedor para los íconos y el teléfono. Se centra en móvil y se alinea a la derecha en desktop. */}
                     <div className="d-flex flex-row align-items-center ms-auto ms-lg-0 order-lg-3">
@@ -30,25 +33,25 @@ const Navbar = () => {
                         {/* Usamos me-auto para alinear los links a la izquierda en pantallas grandes (lg) */}
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <Link className="nav-link active" aria-current="page" to="/">Inicio</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Quienes somos</a>
+                                <Link className="nav-link" to="/quienes-somos">Quienes somos</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Cabaña Toribia I</a>
+                                <Link className="nav-link" to="/toribia-1">Cabaña Toribia I</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Cabaña Toribia II</a>
+                                <Link className="nav-link" to="/toribia-2">Cabaña Toribia II</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Contacto</a>
+                                <Link className="nav-link" to="/contacto">Contacto</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-        </>
+        </header>
     );
 };
 

@@ -1,7 +1,7 @@
 
 const Toribia_1 = () =>{
 return(
-    <h1>Toribia 1</h1>
+    <h1>Toribiaaaa 1</h1>
 );
 
 }

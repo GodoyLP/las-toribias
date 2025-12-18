@@ -1,8 +1,7 @@
 /******* FOOTER **********/
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
- * {
+* {
   font-family: Roboto;
 }
 
@@ -87,3 +86,18 @@ section {
 .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
 
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
