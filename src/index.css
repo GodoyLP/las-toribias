@@ -134,7 +134,7 @@
     width: 12rem;
     height: 12rem;
     background-color: #292D33;
-    border: 40px solid #555C66;
+    border: 40px solid #F2B705;
     top: 4%;
     left: 65%;
     transform: translateX(-50%);
@@ -142,12 +142,12 @@
     /* Detrás de la foto y el anuncio */
 }
 
-/*
+
 #circle2::after {
     width: 12rem;
     height: 12rem;
-    background-color: blue;
-    border: 2px solid whitesmoke;
+    background-color: #F2B705;
+    border: 2px solid #F2B705;
     bottom: 48%;
     left: 13%;
     transform: translateX(-50%);
@@ -156,25 +156,25 @@
 #circle3::after {
     width: 10rem;
     height: 10rem;
-    background-color: red;
-    border: 2px solid whitesmoke;
+    background-color: #F2B705;
+    border: 2px solid #F2B705;
     bottom: 10%;
     left: 78%;
     transform: translateX(-50%);
     z-index: 1;
-    /* Detrás del anuncio 
+    /* Detrás del anuncio */
 }
 
 #circle4::after {
     width: 7rem;
     height: 7rem;
     background-color: #292D33;
-    border: 30px solid #555C66;
-    bottom: 19%;
-    left: 25%;
+    border: 30px solid #F2B705;
+    bottom: 10%;
+    left: 20%;
     transform: translateX(-50%);
 }
-*/
+
 
 .anuncio {
     position: absolute;
@@ -242,13 +242,47 @@
         width: 6rem;
         height: 6rem;
         background-color: #292D33;
-        border: 25px solid #555C66;
+        border: 25px solid #F2B705;
         top: 0%;
-        left: 86%;
+        left: 88%;
         transform: translateX(-50%);
         z-index: 2;
         /* Detrás de la foto y el anuncio */
     }
+
+
+    #circle2::after {
+        width: 8rem;
+        height: 8rem;
+        background-color: #F2B705;
+        border: 2px solid #F2B705;
+        bottom: 65%;
+        left: 20%;
+        transform: translateX(-50%);
+    }
+
+    #circle3::after {
+        width: 5rem;
+        height: 5rem;
+        background-color: #F2B705;
+        border: 2px solid #F2B705;
+        bottom: 2%;
+        left: 90%;
+        transform: translateX(-50%);
+        z-index: 1;
+        /* Detrás del anuncio */
+    }
+
+    #circle4::after {
+        width: 3rem;
+        height: 3rem;
+        background-color: #292D33;
+        border: 15px solid #F2B705;
+        bottom: 5%;
+        left: 7%;
+        transform: translateX(-50%);
+    }
+
 
     .container-ciculo {
         padding-top: 20rem;

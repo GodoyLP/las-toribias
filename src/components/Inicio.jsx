@@ -15,8 +15,11 @@ const Inicio = () => {
                     <div className="anuncio border border-dark border-5" >
                         <h5 className="text-left ">Merlo San Luis</h5>
                         <p className="text-left">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate!". </p>
-                        <a href="#"
-                            className="text-right ">Reserva tu lugar</a>
+                        <div className="text-center">
+                        <button type="button" class="btn btn-outline-warning border rounded-pill p-2">Reserva tu lugar</button>
+                        </div>
+                        
+                        
                     </div>
                     <div id="circle3"></div>
                     <div id="circle4"></div>
@@ -25,7 +28,7 @@ const Inicio = () => {
                     <h5 className="text-center p-2">Merlo San Luis</h5>
                     <p className="text-left p-2">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate!". </p>
                     <div className="text-center p-2"> {/* Contenedor para centrar el botón */}
-                        <button className="btn btn-primary border rounded-pill p-2">Reserva tu lugar</button>
+                        <button className="btn btn-outline-warning border rounded-pill p-2">Reserva tu lugar</button>
                     </div>
                 </div>
                 <div className="container-card  d-flex justify-content-evenly ">
@@ -39,7 +42,7 @@ const Inicio = () => {
                         <div class="imgBox">
                             <img src="https://i.pinimg.com/736x/87/f6/37/87f637ba75e58f5b731349a51da0fa65.jpg" alt="New York Photo" />
                             <div class="img-blur">
-                                <a href="#">Visitar </a>
+                                <a href="/toribia-1">Visitar </a>
                             </div>
                         </div>
 
@@ -71,7 +74,7 @@ const Inicio = () => {
                         <div class="imgBox">
                             <img src="https://i.pinimg.com/736x/ba/ac/94/baac9460432ab5bd714ec50d1cb8d227.jpg" alt="New York Photo" />
                             <div class="img-blur">
-                                <a href="#">Visitar </a>
+                                <a href="/toribia-2">Visitar </a>
                             </div>
                         </div>
 
