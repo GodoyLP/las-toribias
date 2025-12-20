@@ -1,5 +1,7 @@
 
-
+import fachadaToribia1 from '../imagenes/toribia-1/fachada_T1.webp';
+import piletaParque from '../imagenes/parque/pileta-T1.webp';
+import fachadaToribia2 from '../imagenes/Toribia-2/fachada-T2.webp';
 import React from 'react';
 
 
@@ -14,7 +16,7 @@ const Inicio = () => {
                     <div id="circle2"></div> {/* Este es el div que tiene el ::after para el círculo azul */}
                     <div className="anuncio border border-dark border-5" >
                         <h5 className="text-left ">Merlo San Luis</h5>
-                        <p className="text-left">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate!". </p>
+                        <p className="text-left">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate! </p>
                         <div className="text-center">
                         <button type="button" class="btn btn-outline-warning border rounded-pill p-2">Reserva tu lugar</button>
                         </div>
@@ -26,54 +28,54 @@ const Inicio = () => {
                 </div>
                 <div className="anuncio-baner border border-dark border-5" >
                     <h5 className="text-center p-2">Merlo San Luis</h5>
-                    <p className="text-left p-2">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate!". </p>
+                    <p className="text-left p-2">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate! </p>
                     <div className="text-center p-2"> {/* Contenedor para centrar el botón */}
                         <button className="btn btn-outline-warning border rounded-pill p-2">Reserva tu lugar</button>
                     </div>
                 </div>
                 <div className="container-card  d-flex justify-content-evenly ">
-                    <div class="card">
-                        <h2 class="title">
+                    <div className="card">
+                        <h2 className="title">
                             <a href="#">Toribia I</a>
                         </h2>
-                        <p class="text">
+                        <p className="text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
                         </p>
-                        <div class="imgBox">
-                            <img src="https://i.pinimg.com/736x/87/f6/37/87f637ba75e58f5b731349a51da0fa65.jpg" alt="New York Photo" />
-                            <div class="img-blur">
+                        <div className="imgBox">
+                            <img src={fachadaToribia1} alt="Fachada canbaña toribia 1" />
+                            <div className="img-blur">
                                 <a href="/toribia-1">Visitar </a>
                             </div>
                         </div>
 
                     </div>
-                    <div class="card">
-                        <h2 class="title">
+                    <div className="card">
+                        <h2 className="title">
                             <a href="#">Jardin</a>
                         </h2>
-                        <p class="text">
+                        <p className="text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
                         </p>
-                        <div class="imgBox">
-                            <img src="https://i.pinimg.com/736x/93/ae/18/93ae18b22670f5291f9b7e92041c29c9.jpg" alt="New York Photo" />
-                            <div class="img-blur">
+                        <div className="imgBox">
+                            <img src={piletaParque} alt="Pileta jardin" />
+                            <div className="img-blur">
                                 <a href="#">Visitar </a>
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="card">
-                        <h2 class="title">
+                    <div className="card">
+                        <h2 className="title">
                             <a href="#">Toribia II </a>
                         </h2>
-                        <div class="bg-gray-500" h-1  ></div>           
-                        <p class="text">
+                        <div className="bg-gray-500" h-1  ></div>
+                        <p className="text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
                         </p>
-                        <div class="imgBox">
-                            <img src="https://i.pinimg.com/736x/ba/ac/94/baac9460432ab5bd714ec50d1cb8d227.jpg" alt="New York Photo" />
-                            <div class="img-blur">
+                        <div className="imgBox">
+                            <img src={fachadaToribia2} alt="Fachada canbaña toribia 2" />
+                            <div className="img-blur">
                                 <a href="/toribia-2">Visitar </a>
                             </div>
                         </div>

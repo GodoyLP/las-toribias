@@ -1,23 +1,46 @@
 import React from 'react';
 import GaleriaCabaña from './GaleriaCabaña';
+import fachadaToribia2 from '../imagenes/Toribia-2/fachada-T2.webp';
+import bañoToribia2 from '../imagenes/Toribia-2/baño-T2.webp';
+import cocina2Toribia2 from '../imagenes/Toribia-2/cocina-2-T2.webp';
+import dormitorio1Toribia2 from '../imagenes/Toribia-2/habitacion-Adulto-T2.webp';
+import dormitorio2Toribia2 from '../imagenes/Toribia-2/habitacion-niño-T2.webp';
+import livingToribia2 from '../imagenes/Toribia-2/living-1-T2.webp';
+
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1611656752661-d66725c3bc0c?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzNzEyMjk&ixlib=rb-1.2.1&q=80"
+    url: fachadaToribia2
   },
   {
-    url: "https://images.unsplash.com/photo-1622398703904-7ae5d55f8e1a?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzNzEzMjk&ixlib=rb-1.2.1&q=80"
+    url: bañoToribia2
+  } ,
+  {
+    url: cocina2Toribia2
   },
   {
-    url: "https://images.unsplash.com/photo-1621285853634-713b8dd6b5fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzODUwOTg&ixlib=rb-1.2.1&q=80"
+    url: dormitorio1Toribia2
   },
   {
-    url: "https://images.unsplash.com/photo-1580274455191-1c62238fa333?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzODUxNzM&ixlib=rb-1.2.1&q=80"
-  }
+    url: dormitorio2Toribia2
+  },
+  {
+    url: livingToribia2
+  }   
 ];
 
 const Toribia_2 = () => {
   return (
-    <GaleriaCabaña title="Cabaña Toribia II" images={images} />
+    <main>
+      <section>
+        <h1>Cabaña Toribia II</h1>
+        <p>
+          Disfruta de la tranquilidad y el confort en nuestra segunda cabaña, equipada con todo lo necesario para una estadía inolvidable.
+        </p>
+      </section>
+      <section>
+        <GaleriaCabaña title="Galería Cabaña Toribia II" images={images} />
+      </section>
+    </main>
   );
 };
 

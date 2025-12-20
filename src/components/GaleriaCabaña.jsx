@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import '../styles/styleToribia.css';
+import React, { useState, useEffect } from 'react';
+
 
 const SelectedImage = ({ imageUrl }) => {
   return (
@@ -10,18 +10,47 @@ const SelectedImage = ({ imageUrl }) => {
 };
 
 const Images = ({ images, selectedUrl, onImageSelect }) => {
+  const [startIndex, setStartIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const itemsToShow = isMobile ? 4 : 5;
+
+  const handlePrev = () => {
+    if (startIndex > 0) setStartIndex(startIndex - 1);
+  };
+
+  const handleNext = () => {
+    if (startIndex + itemsToShow < images.length) setStartIndex(startIndex + 1);
+  };
+
+  const visibleImages = images.slice(startIndex, startIndex + itemsToShow);
+
   return (
     <div className="flex">
-      {images.map((data) => (
-        <img
-          style={{ borderBottom: selectedUrl === data.url ? '8px solid #B388FF' : '' }}
-          className="mini-img"
+      <button className="nav-arrow" onClick={handlePrev} disabled={startIndex === 0}>
+        &#10094;
+      </button>
+      {visibleImages.map((data) => (
+        <img id="mini-img"
+          className={`mini-img ${selectedUrl === data.url ? 'selected' : ''}`}
+         
           key={data.url}
           src={data.url}
           alt="Gallery thumbnail"
           onClick={() => onImageSelect(data)}
         />
       ))}
+      <button className="nav-arrow" onClick={handleNext} disabled={startIndex + itemsToShow >= images.length}>
+        &#10095;
+      </button>
     </div>
   );
 };

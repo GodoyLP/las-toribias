@@ -1,3 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #292D33;
+    color: black;
+}
+
+
+
+/********** INICIO ***************/
 .parisienne-regular {
     font-family: "Parisienne", cursive;
     font-weight: 400;
@@ -8,7 +20,7 @@
 
 .main {
     margin: 90px 0;
-    background-color: #292D33;
+    /* background-color: #292D33;*/
     overflow-x: hidden;
     /* Evita scroll horizontal durante la animación */
     overflow-y: auto;
@@ -21,7 +33,7 @@
 .ciculo-foto {
     width: 28rem;
     height: 28rem;
-    background-image: url('./image/caminar\ merlo.jpg');
+    background-image: url('../src/imagenes/caminar-merlo.jpg');
     background-size: cover;
     /* Asegura que la imagen cubra todo el círculo */
     background-position: center;
@@ -39,6 +51,7 @@
     /* Asegura que la foto esté por encima de los círculos */
     /* Aplica la animación de 3 segundos */
 }
+
 
 /* Define los pasos de la animación "move-right" */
 @keyframes move-right {
@@ -213,105 +226,9 @@
     /* Espacio entre tarjetas */
 }
 
-/* Media query para dispositivos móviles */
-@media (min-width: 768px) {
-    .anuncio-baner {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .ciculo-foto {
-        width: 16rem;
-        height: 16rem;
-        border: 20px solid #F1C50E;
-        top: 40%;
-        left: -50%;
-        /* Lo posicionamos fuera de la pantalla a la izquierda */
-    }
-
-    .ciculo-foto::after {
-        width: 30%;
-        height: 30%;
-        bottom: -15%;
-        left: 25%;
-
-    }
-
-    #circle1::after {
-        width: 6rem;
-        height: 6rem;
-        background-color: #292D33;
-        border: 25px solid #F2B705;
-        top: 0%;
-        left: 88%;
-        transform: translateX(-50%);
-        z-index: 2;
-        /* Detrás de la foto y el anuncio */
-    }
 
 
-    #circle2::after {
-        width: 8rem;
-        height: 8rem;
-        background-color: #F2B705;
-        border: 2px solid #F2B705;
-        bottom: 65%;
-        left: 20%;
-        transform: translateX(-50%);
-    }
-
-    #circle3::after {
-        width: 5rem;
-        height: 5rem;
-        background-color: #F2B705;
-        border: 2px solid #F2B705;
-        bottom: 2%;
-        left: 90%;
-        transform: translateX(-50%);
-        z-index: 1;
-        /* Detrás del anuncio */
-    }
-
-    #circle4::after {
-        width: 3rem;
-        height: 3rem;
-        background-color: #292D33;
-        border: 15px solid #F2B705;
-        bottom: 5%;
-        left: 7%;
-        transform: translateX(-50%);
-    }
-
-
-    .container-ciculo {
-        padding-top: 20rem;
-        height: 80%;
-    }
-
-    .container-card {
-        margin-top: 20px;
-        padding: 20px;
-        flex-direction: column;
-        /* Cambia la dirección del flex a columna */
-        align-items: center;
-        height: auto;
-        /* Permite que el contenedor crezca */
-        /* Centra las tarjetas cuando están apiladas */
-    }
-
-    .anuncio {
-        display: none;
-    }
-
-    .anuncio-baner {
-        border-radius: 10%;
-    }
-
-}
-
-
-/******card*******/
+/******CARD INICIO*******/
 
 .card {
     display: flex;
@@ -421,3 +338,192 @@
     opacity: 0.6;
 }
 
+
+/************TORIBIA 1 Y TORIBIA 2*******************************/
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img {
+    width: 900px;
+    height: 700px;
+    border-radius: 15px;
+    border: 8px solid #F1C50E;
+}
+
+.mini-img {
+    width: 100px;
+    height: 100px;
+    border: 8px solid #F1C50E;
+    margin-top: -50px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    position: relative;
+    overflow: hidden;
+    top: 0%;
+    left: 0%;
+
+}
+
+.mini-img:hover {
+    transform: scale(1.12);
+    transition: all .75s ease-in-out;
+}
+
+
+
+
+
+.nav-arrow {
+    background-color: transparent;
+    border: none;
+    color: #F1C50E;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: -50px; /* Alineación para PC */
+    height: 40px;
+    align-self: center;
+    transition: transform 0.2s ease;
+}
+.nav-arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.nav-arrow:hover:not(:disabled) {
+    transform: scale(1.2);
+}
+
+/*************** MEDIA QUERY ***************/
+/* Media query para dispositivos móviles */
+@media (min-width: 768px) {
+    .anuncio-baner {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .ciculo-foto {
+        width: 16rem;
+        height: 16rem;
+        border: 20px solid #F1C50E;
+        top: 40%;
+        left: -50%;
+        /* Lo posicionamos fuera de la pantalla a la izquierda */
+    }
+
+    .ciculo-foto::after {
+        width: 30%;
+        height: 30%;
+        bottom: -15%;
+        left: 25%;
+
+    }
+
+    #circle1::after {
+        width: 6rem;
+        height: 6rem;
+        background-color: #292D33;
+        border: 25px solid #F2B705;
+        top: 0%;
+        left: 88%;
+        transform: translateX(-50%);
+        z-index: 2;
+        /* Detrás de la foto y el anuncio */
+    }
+
+
+    #circle2::after {
+        width: 8rem;
+        height: 8rem;
+        background-color: #F2B705;
+        border: 2px solid #F2B705;
+        bottom: 65%;
+        left: 20%;
+        transform: translateX(-50%);
+    }
+
+    #circle3::after {
+        width: 5rem;
+        height: 5rem;
+        background-color: #F2B705;
+        border: 2px solid #F2B705;
+        bottom: 2%;
+        left: 90%;
+        transform: translateX(-50%);
+        z-index: 1;
+        /* Detrás del anuncio */
+    }
+
+    #circle4::after {
+        width: 3rem;
+        height: 3rem;
+        background-color: #292D33;
+        border: 15px solid #F2B705;
+        bottom: 5%;
+        left: 7%;
+        transform: translateX(-50%);
+    }
+
+
+    .container-ciculo {
+        padding-top: 20rem;
+        height: 80%;
+    }
+
+    .container-card {
+        margin-top: 20px;
+        padding: 20px;
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna */
+        align-items: center;
+        height: auto;
+        /* Permite que el contenedor crezca */
+        /* Centra las tarjetas cuando están apiladas */
+    }
+
+    .anuncio {
+        display: none;
+    }
+
+    .anuncio-baner {
+        border-radius: 10%;
+    }
+
+    /***************TORIBIA 1 Y TORIBIA 2*******************************/
+    .img {
+        width: 350px;
+        height: 300px;
+        border-radius: 15px;
+        border: 8px solid #F1C50E;
+    }
+
+    .mini-img {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #F1C50E;
+        margin-top: -30px;
+        cursor: pointer;
+        border-radius: 50%;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        position: relative;
+        overflow: hidden;
+        top: 10%;
+        left: 0%;
+
+    }
+
+    .nav-arrow {
+        color: #292D33;
+        font-size: 1.5rem;
+        margin-top: -30px; /* Reajuste para móvil */
+    }
+
+}

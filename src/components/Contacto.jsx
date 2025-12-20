@@ -4,62 +4,62 @@ const Contacto = () => {
     return (
         <>
             
-            <section class="contact section" id="contact">
-                <h2 class="section-title" data-heading="Get in Touch">Contactame</h2>
+            <section className="contact section" id="contact">
+                <h2 className="section-title" data-heading="Get in Touch">Contactame</h2>
 
-                <div class="contact-container container grid">
-                    <div class="contact-content ">
-                        <div class="contact-info text-decoration-none">
-                            <div class="contact-card">
-                                <i class="uil uil-envelope-edit contact-card-icon"></i>
-                                <h3 class="contact-card-title">Email</h3>
-                                <span class="contact-card-data">user@gmail.com</span>
-                                <span class="contact-button">Escribime <i class="uil uil-arrow-right contact-button-icon"></i></span>
+                <div className="contact-container container grid">
+                    <div className="contact-content ">
+                        <div className="contact-info text-decoration-none">
+                            <div className="contact-card">
+                                <i className="uil uil-envelope-edit contact-card-icon"></i>
+                                <h3 className="contact-card-title">Email</h3>
+                                <span className="contact-card-data">user@gmail.com</span>
+                                <span className="contact-button">Escribime <i className="uil uil-arrow-right contact-button-icon"></i></span>
                             </div>
 
-                            <div class="contact-card">
-                                <i class="uil uil-whatsapp contact-card-icon"></i>
-                                <h3 class="contact-card-title">Whatsapp</h3>
-                                <span class="contact-card-data">333-333-333</span>
-                                <span class="contact-button">Escribime <i class="uil uil-arrow-right contact-button-icon"></i></span>
+                            <div className="contact-card">
+                                <i className="uil uil-whatsapp contact-card-icon"></i>
+                                <h3 className="contact-card-title">Whatsapp</h3>
+                                <span className="contact-card-data">333-333-333</span>
+                                <span className="contact-button">Escribime <i className="uil uil-arrow-right contact-button-icon"></i></span>
                             </div>
 
-                            <div class="contact-card">
-                                <i class="uil uil-facebook-messenger contact-card-icon"></i>
-                                <h3 class="contact-card-title">@lastoribia</h3>
-                                <span class="contact-card-data">user.ssss</span>
-                                <span class="contact-button">Seguime <i class="uil uil-arrow-right contact-button-icon"></i></span>
+                            <div className="contact-card">
+                                <i className="uil uil-facebook-messenger contact-card-icon"></i>
+                                <h3 className="contact-card-title">@lastoribia</h3>
+                                <span className="contact-card-data">user.ssss</span>
+                                <span className="contact-button">Seguime <i className="uil uil-arrow-right contact-button-icon"></i></span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="contact-content">
-                        <form action="" class="contact-form">
-                            <div class="input-container">
-                                <input type="text" class="input"/>
-                                    <label for="">Username</label>
+                    <div className="contact-content">
+                        <form action="" className="contact-form">
+                            <div className="input-container">
+                                <input type="text" className="input"/>
+                                    <label htmlFor="">Username</label>
                                     <span>Username</span>
                             </div>
 
-                            <div class="input-container">
-                                <input type="email" class="input"/>
-                                    <label for="">Email</label>
+                            <div className="input-container">
+                                <input type="email" className="input"/>
+                                    <label htmlFor="">Email</label>
                                     <span>Email</span>
                             </div>
 
-                            <div class="input-container">
-                                <input type="tel" class="input"/>
-                                    <label for="">Phone</label>
+                            <div className="input-container">
+                                <input type="tel" className="input"/>
+                                    <label htmlFor="">Phone</label>
                                     <span>Phone</span>
                             </div>
 
-                            <div class="input-container textarea">
-                                <textarea name="" id="" class="input"></textarea>
-                                <label for="">Message</label>
+                            <div className="input-container textarea">
+                                <textarea name="" id="" className="input"></textarea>
+                                <label htmlFor="">Message</label>
                                 <span>Message</span>
                             </div>
 
-                            <button type="submit" class="button"><i class="uil uil-navigator button-icon"></i>Send Message</button>
+                            <button type="submit" className="button"><i className="uil uil-navigator button-icon"></i>Send Message</button>
                         </form>
                     </div>
                 </div>
