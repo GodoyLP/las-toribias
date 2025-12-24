@@ -60,12 +60,12 @@ const GaleriaCabaña = ({ title, images }) => {
   const [selectedImg, setSelectedImg] = useState(images.length > 0 ? images[0] : null);
 
   if (!selectedImg) {
-    return <div><h1>{title}</h1><p>No hay imágenes para mostrar.</p></div>;
+    return <div><h2>{title}</h2><p>No hay imágenes para mostrar.</p></div>;
   }
 
   return (
     <div>
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <SelectedImage imageUrl={selectedImg.url} />
       <Images images={images} selectedUrl={selectedImg.url} onImageSelect={setSelectedImg} />
     </div>

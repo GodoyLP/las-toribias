@@ -118,7 +118,8 @@ body {
 #circle1::after,
 #circle2::after,
 #circle3::after,
-#circle4::after {
+#circle4::after,
+#circle5::after {
     content: '';
     /* Requerido para que el pseudo-elemento se muestre */
     position: absolute;
@@ -188,14 +189,23 @@ body {
     transform: translateX(-50%);
 }
 
+#circle5::after {
+    width: 6rem;
+    height: 6rem;
+    background-color: #F2B705;
+    border: 30px solid #F2B705;
+    bottom: 8%;
+    left: 60%;
+    transform: translateX(-50%);
+}
 
 .anuncio {
     position: absolute;
     width: 450px;
     /* Ancho del cuadro de anuncio */
     padding: 1rem;
-    top: 95%;
-    left: 30%;
+    top: 110%;
+    left: 35%;
     border-radius: 25px;
     opacity: 0;
     /* Empieza invisible */
@@ -340,6 +350,11 @@ body {
 
 
 /************TORIBIA 1 Y TORIBIA 2*******************************/
+.container-toribia{
+ margin-top: 20px;
+ padding: 20px
+}
+
 
 .flex {
     display: flex;
@@ -348,8 +363,8 @@ body {
 }
 
 .img {
-    width: 900px;
-    height: 700px;
+    width: 850px;
+    height: 600px;
     border-radius: 15px;
     border: 8px solid #F1C50E;
 }
@@ -375,10 +390,6 @@ body {
     transition: all .75s ease-in-out;
 }
 
-
-
-
-
 .nav-arrow {
     background-color: transparent;
     border: none;
@@ -399,6 +410,51 @@ body {
 .nav-arrow:hover:not(:disabled) {
     transform: scale(1.2);
 }
+
+.img-toribia {
+    border-radius: 50%;
+    border: 1px solid #F1C50E;
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    position: relative;
+    overflow: hidden;
+    top: 0%;
+    left: 0%;
+    background-color: aqua;
+    
+}
+
+.carrusel-toribia{
+    padding: 5%;
+    margin-top: 3%;
+
+}
+.text-toribia{
+    list-style-type: none;
+    margin-top: 6%;
+    padding-left: 3%;
+padding-bottom: 3px;
+    font-size: 1.2rem;
+    color: white;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.text-toribia-titulo{
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: -1%;
+    font-size: 1.5rem;
+}
+li{
+    list-style-type: none;
+    margin-top: 2%;
+    padding-left: 1%;
+}
+
 
 /*************** MEDIA QUERY ***************/
 /* Media query para dispositivos móviles */

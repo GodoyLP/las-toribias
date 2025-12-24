@@ -17,7 +17,7 @@ const Navbar = () => {
  
                     <div className="collapse navbar-collapse" id="navbarNav">
                         {/* Usamos mx-auto para centrar los links */}
-                        <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav mx-auto mb-2 mb-lg-0 text-nowrap">
                             <li className="nav-item">
                                 <NavLink className="nav-link" aria-current="page" to="/" end>Inicio</NavLink>
                             </li>
@@ -29,6 +29,9 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/toribia-2">Cabaña Toribia II</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/preguntas-frecuentes">Preguntas Frecuentes</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/contacto">Contacto</NavLink>
