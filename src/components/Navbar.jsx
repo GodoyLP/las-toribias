@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
-import telefonoGif from '../imagenes/iconos/call-phone-hover-phone-ring.gif';
-import watsappGif from '../imagenes/iconos/whatsapp-hover-pinch.gif';
+import telefonoGif from '../imagenes/iconos/gif/call-phone-hover-phone-ring.gif';
+import watsappGif from '../imagenes/iconos/gif/whatsapp-hover-pinch.gif';
 
 const Navbar = () => {
     return (

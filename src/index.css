@@ -456,6 +456,273 @@ li{
 }
 
 
+
+
+
+/*****
+Breakpoints comunes (Puntos de quiebre)
+/******* Móviles *********/
+@media (max-width: 575px) or (min-width: 576px){
+.ciculo-foto {
+        width: 16rem;
+        height: 16rem;
+        /*border: 20px solid #F1C50E;*/
+        border: 20px solid blue;
+        top: 40%;
+        left: -50%;
+        /* Lo posicionamos fuera de la pantalla a la izquierda */
+    }
+
+    .ciculo-foto::after {
+        width: 30%;
+        height: 30%;
+        bottom: -15%;
+        left: 25%;
+
+    }
+
+    #circle1::after {
+        width: 6rem;
+        height: 6rem;
+        background-color: #292D33;
+        border: 25px solid #F2B705;
+        top: 0%;
+        left: 88%;
+        transform: translateX(-50%);
+        z-index: 2;
+        /* Detrás de la foto y el anuncio */
+    }
+
+
+    #circle2::after {
+        width: 8rem;
+        height: 8rem;
+        background-color: #F2B705;
+        border: 2px solid #F2B705;
+        bottom: 65%;
+        left: 20%;
+        transform: translateX(-50%);
+    }
+
+    #circle3::after {
+        width: 5rem;
+        height: 5rem;
+        background-color: #F2B705;
+        border: 2px solid #F2B705;
+        bottom: 2%;
+        left: 90%;
+        transform: translateX(-50%);
+        z-index: 1;
+        /* Detrás del anuncio */
+    }
+
+    #circle4::after {
+        width: 3rem;
+        height: 3rem;
+        background-color: #292D33;
+        border: 15px solid #F2B705;
+        bottom: 5%;
+        left: 7%;
+        transform: translateX(-50%);
+    }
+
+
+    .container-ciculo {
+        padding-top: 20rem;
+        height: 80%;
+    }
+
+    .container-card {
+        margin-top: 20px;
+        padding: 20px;
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna */
+        align-items: center;
+        height: auto;
+        /* Permite que el contenedor crezca */
+        /* Centra las tarjetas cuando están apiladas */
+    }
+
+    .anuncio {
+        display: none;
+    }
+
+    .anuncio-baner {
+        border-radius: 10%;
+    }
+
+    /****TORIBIA 1 Y TORIBIA 2*****/
+    .img {
+        width: 350px;
+        height: 300px;
+        border-radius: 15px;
+        border: 8px solid #F1C50E;
+    }
+
+    .mini-img {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #F1C50E;
+        margin-top: -30px;
+        cursor: pointer;
+        border-radius: 50%;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        position: relative;
+        overflow: hidden;
+        top: 10%;
+        left: 0%;
+
+    }
+
+    .nav-arrow {
+        color: #292D33;
+        font-size: 1.5rem;
+        margin-top: -30px; /* Reajuste para móvil */
+    }
+}
+
+/********* Tabletas ********
+@media(min-width: 768px) and (max-width: 991px){
+
+}
+*/
+/******** Laptops/Escritorios pequeños ********/
+@media (min-width: 992px) and (max-width: 1199px){
+        
+    .ciculo-foto {
+    
+        width: 20rem;
+        height: 20rem;
+        /*border: 20px solid #F1C50E;*/
+        border: 20px solid red;
+        top: 40%;
+        left: -50%;
+        /* Lo posicionamos fuera de la pantalla a la izquierda */
+    }
+
+    .ciculo-foto::after {
+        width: 30%;
+        height: 30%;
+        bottom: -15%;
+        left: 25%;
+
+    }
+
+    #circle1::after {
+        width: 6rem;
+        height: 6rem;
+        background-color: #292D33;
+        border: 25px solid #F2B705;
+        top: 0%;
+        left: 88%;
+        transform: translateX(-50%);
+        z-index: 2;
+        /* Detrás de la foto y el anuncio */
+    }
+
+
+    #circle2::after {
+        width: 8rem;
+        height: 8rem;
+        background-color: #F2B705;
+        border: 2px solid #F2B705;
+        bottom: 65%;
+        left: 20%;
+        transform: translateX(-50%);
+    }
+
+    #circle3::after {
+        width: 5rem;
+        height: 5rem;
+        background-color: #F2B705;
+        border: 2px solid #F2B705;
+        bottom: 2%;
+        left: 90%;
+        transform: translateX(-50%);
+        z-index: 1;
+        /* Detrás del anuncio */
+    }
+
+    #circle4::after {
+        width: 3rem;
+        height: 3rem;
+        background-color: #292D33;
+        border: 15px solid #F2B705;
+        bottom: 5%;
+        left: 7%;
+        transform: translateX(-50%);
+    }
+
+
+    .container-ciculo {
+        padding-top: 20rem;
+        height: 80%;
+    }
+
+    .container-card {
+        margin-top: 20px;
+        padding: 20px;
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna */
+        align-items: center;
+        height: auto;
+        /* Permite que el contenedor crezca */
+        /* Centra las tarjetas cuando están apiladas */
+    }
+
+    .anuncio {
+        display: none;
+    }
+
+    .anuncio-baner {
+        border-radius: 10%;
+    }
+
+    /****TORIBIA 1 Y TORIBIA 2*****/
+    .img {
+        width: 350px;
+        height: 300px;
+        border-radius: 15px;
+        border: 8px solid #F1C50E;
+    }
+
+    .mini-img {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #F1C50E;
+        margin-top: -30px;
+        cursor: pointer;
+        border-radius: 50%;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        position: relative;
+        overflow: hidden;
+        top: 10%;
+        left: 0%;
+
+    }
+
+    .nav-arrow {
+        color: #292D33;
+        font-size: 1.5rem;
+        margin-top: -30px; /* Reajuste para móvil */
+    }
+}
+
+/******* Escritorios grandes/TV *********/
+@media  (min-width: 1200px){
+
+} 
+
+/************
+Nuevos operadores de rango (Sintaxis Moderna)
+Permiten definir rangos más claros y concisos
+Para anchos entre 500px y 999px
+@media (500px <= width < 1000px){
+
+}
+*/
 /*************** MEDIA QUERY ***************/
 /* Media query para dispositivos móviles */
 @media (min-width: 768px) {
@@ -464,8 +731,15 @@ li{
     }
 }
 
+/*
 @media (max-width: 768px) {
-    .ciculo-foto {
+    
+}*/
+
+
+/*******Para anchos de 768px o más.********/
+@media (width >= 768px) {
+.ciculo-foto {
         width: 16rem;
         height: 16rem;
         border: 20px solid #F1C50E;
@@ -552,7 +826,7 @@ li{
         border-radius: 10%;
     }
 
-    /***************TORIBIA 1 Y TORIBIA 2*******************************/
+    /****TORIBIA 1 Y TORIBIA 2*****/
     .img {
         width: 350px;
         height: 300px;
@@ -583,3 +857,10 @@ li{
     }
 
 }
+
+/****** Para anchos menores a 480px. ********
+@media (width < 480px){
+
+}
+
+*/
