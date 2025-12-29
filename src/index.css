@@ -679,13 +679,13 @@ Breakpoints comunes (Puntos de quiebre)
         border-radius: 10%;
     }
 
-    /****TORIBIA 1 Y TORIBIA 2*****/
+    /****TORIBIA 1 Y TORIBIA 2*****
     .img {
         width: 350px;
         height: 300px;
         border-radius: 15px;
         border: 8px solid #F1C50E;
-    }
+    }*/
 
     .mini-img {
         width: 50px;
@@ -828,8 +828,8 @@ Para anchos entre 500px y 999px
 
     /****TORIBIA 1 Y TORIBIA 2*****/
     .img {
-        width: 350px;
-        height: 300px;
+        width: 600px;
+        height: 600px;
         border-radius: 15px;
         border: 8px solid #F1C50E;
     }

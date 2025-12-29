@@ -34,7 +34,7 @@ import pavaElectricaPNG from '../imagenes/iconos/png/pava.png';
 import toallaPNG from '../imagenes/iconos/png/toalla.png';
 import sabanaPNG from '../imagenes/iconos/png/almohada-de-colchon.png';
 import perchaPNG from '../imagenes/iconos/png/percha.png';
-import mantaPNG from '../imagenes/iconos/png/frazada.png';
+import mantaPNG from '../imagenes/iconos/png/ropa-de-cama.png';
 import persianaPNG from '../imagenes/iconos/png/persianas-levantadas.png';
 import guardaropaPNG from '../imagenes/iconos/png/perchero-para-ropa.png';
 import mosquiteroPNG from '../imagenes/iconos/png/mosquitero.png';
@@ -42,9 +42,22 @@ import aguaCalientePNG from '../imagenes/iconos/png/grifo-de-agua.png';
 import duchaPNG from '../imagenes/iconos/png/ducha.png';
 import bidePNG from '../imagenes/iconos/png/bide.png';
 import jabonPNG from '../imagenes/iconos/png/jabon.png';
-
-
-
+import piletanadarPNG from '../imagenes/iconos/png/nadador.png';
+import mesaparrillaPNG from '../imagenes/iconos/png/mesa-de-trabajo.png';
+import parrillacarbonPNG from '../imagenes/iconos/png/parrilla.png';
+import tenedorparrillaPNG from '../imagenes/iconos/png/tenedor.png';
+import hamacaPNG from '../imagenes/iconos/png/silla.png';
+import reposeraPNG from '../imagenes/iconos/png/silla-de-jardin.png';
+import terrazaPNG from '../imagenes/iconos/png/terraza.png';
+import balconPNG from '../imagenes/iconos/png/balcon.png';
+import cochePNG from '../imagenes/iconos/png/coche.png';
+import parquejardinPNG from '../imagenes/iconos/png/parque.png';
+import botiquinPNG from '../imagenes/iconos/png/botiquin_de_primeros_auxilios.png';
+import matafuegoPNG from '../imagenes/iconos/png/extinto_de_incendios.png';
+import alarmaPNG from '../imagenes/iconos/png/seguridad_de_casa.png';
+import afitrionPNG from '../imagenes/iconos/png/sosteniendo-la-llave-con-la-mano.png';
+import mascotasPNG from '../imagenes/iconos/png/gato-perro.png';
+import tenderPNG from '../imagenes/iconos/png/colgando-seco.png';
 
 
 
@@ -178,9 +191,9 @@ const Toribia_1 = () => {
                       <li className="text-dark text-md-start text-start fs-6">
                         <img src={pavaElectricaPNG} className="theme-colors-second" alt="Pava eléctrica" width="30" height="30" />  Pava eléctrica</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={congeladorPNG} className="theme-colors-second" alt="Heladera con frezzer" width="30" height="30" />  Heladera con frezzer</li>
+                        <img src={congeladorPNG} className="theme-colors-second" alt="Heladera con frezzer" width="40" height="40" />  Heladera con frezzer</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={comedroPNG} className="theme-colors-second" alt="Comerdor cocina" width="30" height="30" />  Los huéspedes pueden comer cocinar en este espacio</li>
+                        <img src={comedroPNG} className="theme-colors-second" alt="Comerdor cocina" width="40" height="40" />  Los huéspedes pueden comer y cocinar en este espacio</li>
                     </ul>
                   </div>
                   <div className="text-toribia col-sm-9">
@@ -193,11 +206,11 @@ const Toribia_1 = () => {
                       <li className="text-dark text-md-start text-start fs-6">
                         <img src={perchaPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Perchas</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={mantaPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Almohadas y mantas adicionales</li>
+                        <img src={mantaPNG} className="theme-colors-second" alt="ventilador portatil" width="40" height="40" />  Almohadas y mantas adicionales</li>
                       <li className="text-dark text-md-start text-start fs-6">
                         <img src={persianaPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Persianas o cortinas blackout</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={guardaropaPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Espacio para guardar ropa: placard</li>
+                        <img src={guardaropaPNG} className="theme-colors-second" alt="ventilador portatil" width="40" height="40" />  Espacio para guardar ropa: placard</li>
                       <li className="text-dark text-md-start text-start fs-6">
                         <img src={mosquiteroPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Mosquitero</li>
                     </ul>
@@ -206,7 +219,7 @@ const Toribia_1 = () => {
                     <div><h5 className="text-dark text-md-start text-start">Baño</h5> </div>
                     <ul>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={aguaCalientePNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Agua caliente</li>
+                        <img src={aguaCalientePNG} className="theme-colors-second" alt="ventilador portatil" width="40" height="40" />  Agua caliente</li>
                       <li className="text-dark text-md-start text-start fs-6">
                         <img src={duchaPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Ducha masajeador</li>
                       <li className="text-dark text-md-start text-start fs-6">
@@ -219,38 +232,29 @@ const Toribia_1 = () => {
                     <div><h5 className="text-dark text-md-start text-start">Al aire libre</h5> </div>
                     <ul>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Pileta</li>
+                        <img src={piletanadarPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Pileta con proteccion para niños</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Zona para comer al aire libre</li>
+                        <img src={mesaparrillaPNG} className="theme-colors-second" alt="ventilador portatil" width="40" height="40" />  Zona para comer al aire libre</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Parrilla privada: a carbón</li>
+                        <img src={parrillacarbonPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Parrilla privada al carbón</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Utensilios para la parrilla</li>
+                        <img src={tenedorparrillaPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Utensilios para la parrilla</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Muebles de exterior</li>
+                        <img src={hamacaPNG} className="theme-colors-second" alt="ventilador portatil" width="40" height="40" />  Muebles de exterior hamaca colgante</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Reposeras</li>
+                        <img src={reposeraPNG} className="theme-colors-second" alt="ventilador portatil" width="40" height="40" />  Reposeras</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Mobiliario exterior</li>
+                        <img src={balconPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Habitacion con balcon</li> 
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Terraza</li>
-                    </ul>
-                  </div>
+                        <img src={terrazaPNG} className="theme-colors-second" alt="ventilador portatil" width="40" height="40" />  Terraza</li>
+                    </ul>                </div>
                   <div className="text-toribia col-sm-9">
                     <div><h5 className="text-dark text-md-start text-start">Estacionamiento e instalaciones</h5> </div>
                     <ul>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Estacionamiento gratis en la propiedad</li>
-                      <li className="text-dark text-md-start text-start fs-6"></li>
+                        <img src={cochePNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Estacionamiento gratis en la propiedad</li>
+                      <li className="text-dark text-md-start text-start fs-6">
+                        <img src={parquejardinPNG} className="theme-colors-second" alt="ventilador portatil" width="40" height="40" />  Jardin </li>
 
                     </ul>
                   </div>
@@ -258,14 +262,11 @@ const Toribia_1 = () => {
                     <div><h5 className="text-dark text-md-start text-start">Servicios</h5> </div>
                     <ul>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        El anfitrión te va a recibir</li>
+                        <img src={afitrionPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  El anfitrión te va a recibir</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Se permiten mascotas</li>
+                        <img src={mascotasPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Se permiten mascotas</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Ténder para ropa</li>
+                        <img src={tenderPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Ténder para ropa</li>
 
                     </ul>
                   </div>
@@ -273,14 +274,11 @@ const Toribia_1 = () => {
                     <div><h5 className="text-dark text-md-start text-start">Seguridad en el hogar</h5> </div>
                     <ul>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Botiquín</li>
+                        <img src={botiquinPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />  Botiquín</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Extintor de incendios</li>
+                        <img src={matafuegoPNG} className="theme-colors-second" alt="ventilador portatil" width="40" height="40" />  Extintor de incendios</li>
                       <li className="text-dark text-md-start text-start fs-6">
-                        <img src={ventilador_portatilPNG} className="theme-colors-second" alt="ventilador portatil" width="30" height="30" />
-                        Alarma de seguridad en el cabaña</li>
+                        <img src={alarmaPNG} className="theme-colors-second" alt="ventilador portatil" width="40" height="40" />  Alarma de seguridad en el cabaña</li>
                     </ul>
                   </div>
                   <div className="text-toribia col-sm-9">
