@@ -120,24 +120,23 @@ const Toribia_1 = () => {
             <div className='text-toribia-titulo'><h2>¿Que ofrece la cabaña las toribia I ? </h2></div>
             <div class="text-toribia col-sm-6">
 
-              <ul>
-                <li><img src={Wiffi} className="theme-colors-second" alt="wiffi" width="50" height="50" /> Wiffi</li>
-                <li><img src={Pisina} className="theme-colors-second" alt="Pileta" width="50" height="50" />  Piscina</li>
-                <li><img src={Tv} className="theme-colors-second" alt="smart tv" width="50" height="50" />  SmartTV</li>
-                <li><img src={aire_acondicionado} className="theme-colors-second" alt="aire acondicionado" width="50" height="50" /> Aire acondicionado</li>
-                <li><img src={Cocina} className="theme-colors-second" alt="cocina equipada" width="70" height="70" /> Cocina equipada</li>
+              <ul >
+                <li><img src={Wiffi} className="theme-colors-second" alt="wiffi" width="50" height="50" /> Wiffi.</li>
+                <li><img src={Pisina} className="theme-colors-second" alt="Pileta" width="50" height="50" /> Piscina.</li>
+                <li><img src={Tv} className="theme-colors-second" alt="smart tv" width="50" height="50" /> SmartTV.</li>
+                <li><img src={aire_acondicionado} className="theme-colors-second" alt="aire acondicionado" width="50" height="50" /> Aire acondicionado.</li>
+                <li><img src={Cocina} className="theme-colors-second" alt="cocina equipada" width="70" height="70" /> Cocina equipada.</li>
 
                 {/*<img src={Tvgif} className="theme-colors-second" alt="WhatsApp" width="50" height="50" />*/}
               </ul>
             </div>
             <div class="text-toribia col-sm-6">
               <ul>
-                <li><img src={parrilla} className="theme-colors-second" alt="parilla exterior" width="60" height="60" /> Parrilla y espacio exterior</li>
-                <li><img src={estacionamiento} className="theme-colors-second" alt="estacionamiento" width="60" height="60" /> Estacionamiento gratuito en las instalaciones</li>
-                <li><img src={toalla} className="theme-colors-second" alt="Toalla toallon" width="60" height="60" />Juego de blanqueria</li>
-                <li><img src={alarma} className="theme-colors-second" alt="Toalla toallon" width="60" height="60" /> Sistema alarma de seguridad</li>
-
-                <li><img src={silla_jardin} className="theme-colors-second" alt="Silla de jardín" width="70" height="70" /> Mobiliario exterior</li>
+                <li><img src={parrilla} className="theme-colors-second" alt="parilla exterior" width="60" height="60" /> Parrilla y espacio exterior.</li>
+                <li><img src={estacionamiento} className="theme-colors-second" alt="estacionamiento" width="60" height="60"/>Estacionamiento gratuito</li>
+                <li><img src={toalla} className="theme-colors-second" alt="Toalla toallon" width="60" height="60" /> Juego de blanqueria.</li>
+                <li><img src={alarma} className="theme-colors-second" alt="Toalla toallon" width="60" height="60" /> Seguridad alarma.</li>
+                <li><img src={silla_jardin} className="theme-colors-second" alt="Silla de jardín" width="70" height="70" /> Mobiliario exterior.</li>
               </ul>
             </div>
           </div>

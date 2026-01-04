@@ -7,8 +7,6 @@ body {
     color: black;
 }
 
-
-
 /********** INICIO ***************/
 .parisienne-regular {
     font-family: "Parisienne", cursive;
@@ -31,18 +29,18 @@ body {
 }
 
 .ciculo-foto {
-    width: 28rem;
-    height: 28rem;
+    width: 18rem;
+    height: 18rem;
     background-image: url('../src/imagenes/caminar-merlo.jpg');
     background-size: cover;
     /* Asegura que la imagen cubra todo el círculo */
     background-position: center;
     /* Centra la imagen dentro del círculo */
     /* background-color: yellow; */
-    border: 20px solid #F1C50E;
+    border: 15px solid #F1C50E;
     border-radius: 50%;
     position: absolute;
-    top: 53%;
+    top: 35%;
     left: -50%;
     /* Lo posicionamos fuera de la pantalla a la izquierda */
     transform: translateY(-50%);
@@ -118,8 +116,7 @@ body {
 #circle1::after,
 #circle2::after,
 #circle3::after,
-#circle4::after,
-#circle5::after {
+#circle4::after {
     content: '';
     /* Requerido para que el pseudo-elemento se muestre */
     position: absolute;
@@ -134,8 +131,8 @@ body {
 }
 
 .ciculo-foto::after {
-    width: 8rem;
-    height: 8rem;
+    width: 4rem;
+    height: 4rem;
     background-color: #F1C50E;
     border: 30px solid #F1C50E;
     /* Un tono de amarillo dorado */
@@ -145,12 +142,12 @@ body {
 }
 
 #circle1::after {
-    width: 12rem;
-    height: 12rem;
+    width: 6rem;
+    height: 6rem;
     background-color: #292D33;
-    border: 40px solid #F2B705;
-    top: 4%;
-    left: 65%;
+    border: 28px solid #F2B705;
+    top: 0%;
+    left: 80%;
     transform: translateX(-50%);
     z-index: 2;
     /* Detrás de la foto y el anuncio */
@@ -158,48 +155,39 @@ body {
 
 
 #circle2::after {
-    width: 12rem;
-    height: 12rem;
+    width: 7rem;
+    height: 7rem;
     background-color: #F2B705;
     border: 2px solid #F2B705;
-    bottom: 48%;
-    left: 13%;
+    bottom: 82%;
+    left: 20%;
     transform: translateX(-50%);
 }
 
 #circle3::after {
-    width: 10rem;
-    height: 10rem;
+    width: 6rem;
+    height: 6rem;
     background-color: #F2B705;
     border: 2px solid #F2B705;
-    bottom: 10%;
-    left: 78%;
+    bottom: 13%;
+    left: 80%;
     transform: translateX(-50%);
     z-index: 1;
     /* Detrás del anuncio */
 }
 
 #circle4::after {
-    width: 7rem;
-    height: 7rem;
+    width: 9rem;
+    height: 9rem;
     background-color: #292D33;
-    border: 30px solid #F2B705;
-    bottom: 10%;
-    left: 20%;
-    transform: translateX(-50%);
-}
-
-#circle5::after {
-    width: 6rem;
-    height: 6rem;
-    background-color: #F2B705;
-    border: 30px solid #F2B705;
-    bottom: 8%;
-    left: 60%;
+    border: 24px solid #F2B705;
+    bottom: 4%;
+    left: 2%;
     transform: translateX(-50%);
 }
 
 .anuncio {
+    display: none;
     position: absolute;
     width: 450px;
     /* Ancho del cuadro de anuncio */
@@ -221,9 +209,19 @@ body {
     /* Asegura que esté por encima de los círculos */
 }
 
+/*
 .anuncio-baner {
+    width: 90%;
+    height: auto;
+    border-radius: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 65%;
+    left: 5%;
     background-color: white;
-}
+    z-index: 20;
+}*/
 
 .container-card {
     margin-top: 12rem;
@@ -264,7 +262,7 @@ body {
     width: 250px;
     height: 250px;
     border: 15px soliD #F1C50E;
-    background: red;
+    margin-bottom: 20px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -348,11 +346,115 @@ body {
     opacity: 0.6;
 }
 
+/******Footer**********/
 
-/************TORIBIA 1 Y TORIBIA 2*******************************/
-.container-toribia{
- margin-top: 20px;
- padding: 20px
+section {
+    width: 100%;
+    display: inline-block;
+    background: #ccc;
+    height: 60vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.footer-distributed {
+    background-color: #000000;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+.footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition: all .25s;
+}
+
+/*
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+*/
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-right {
+    text-align: center;
+}
+
+.footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+}
+
+.footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+}
+
+/************Quiene somos **************************/
+
+
+/************Cabaña Toribia 1 y cabaña toribia 2 ****************************************/
+.container-toribia {
+    margin-top: 20px;
+    padding: 20px
 }
 
 
@@ -363,17 +465,17 @@ body {
 }
 
 .img {
-    width: 850px;
-    height: 600px;
+    width: 400px;
+    height: 300px;
     border-radius: 15px;
     border: 8px solid #F1C50E;
 }
 
 .mini-img {
-    width: 100px;
-    height: 100px;
-    border: 8px solid #F1C50E;
-    margin-top: -50px;
+    width: 60px;
+    height: 60px;
+    border: 4px solid #F1C50E;
+    margin-top: -35px;
     cursor: pointer;
     border-radius: 50%;
     object-fit: cover;
@@ -398,15 +500,18 @@ body {
     cursor: pointer;
     border-radius: 5px;
     padding: 0 10px;
-    margin-top: -50px; /* Alineación para PC */
+    margin-top: -50px;
+    /* Alineación para PC */
     height: 40px;
     align-self: center;
     transition: transform 0.2s ease;
 }
+
 .nav-arrow:disabled {
     opacity: 0.3;
     cursor: not-allowed;
 }
+
 .nav-arrow:hover:not(:disabled) {
     transform: scale(1.2);
 }
@@ -414,8 +519,8 @@ body {
 .img-toribia {
     border-radius: 50%;
     border: 1px solid #F1C50E;
-    width: 30rem;
-    height: 30rem;
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
     aspect-ratio: 1/1;
     position: relative;
@@ -423,33 +528,35 @@ body {
     top: 0%;
     left: 0%;
     background-color: aqua;
-    
+
 }
 
-.carrusel-toribia{
+.carrusel-toribia {
     padding: 5%;
     margin-top: 3%;
 
 }
-.text-toribia{
+
+.text-toribia {
     list-style-type: none;
-    margin-top: 6%;
+    margin-top: 8%;
     padding-left: 3%;
-padding-bottom: 3px;
+    padding-bottom: 3px;
     font-size: 1.2rem;
     color: white;
     text-align: justify;
     line-height: 1.6;
 }
 
-.text-toribia-titulo{
+.text-toribia-titulo {
     color: white;
     text-align: center;
     margin-top: 3%;
     margin-bottom: -1%;
     font-size: 1.5rem;
 }
-li{
+
+li {
     list-style-type: none;
     margin-top: 2%;
     padding-left: 1%;
@@ -459,408 +566,275 @@ li{
 
 
 
-/*****
-Breakpoints comunes (Puntos de quiebre)
-/******* Móviles *********/
-@media (max-width: 575px) or (min-width: 576px){
-.ciculo-foto {
-        width: 16rem;
-        height: 16rem;
-        /*border: 20px solid #F1C50E;*/
-        border: 20px solid blue;
+
+
+
+
+
+
+/********* Media Queries ****************/
+
+/* vertical*/
+@media (max-width: 991px) and (orientation: portrait) {
+    .ciculo-foto {
+        width: 22rem;
+        height: 22rem;
+        /* Asegura que la imagen cubra todo el círculo */
+        background-position: center;
+        /* Centra la imagen dentro del círculo */
+        /* background-color: yellow; */
+        border: 15px solid #F1C50E;
         top: 40%;
         left: -50%;
-        /* Lo posicionamos fuera de la pantalla a la izquierda */
-    }
 
-    .ciculo-foto::after {
-        width: 30%;
-        height: 30%;
-        bottom: -15%;
-        left: 25%;
-
-    }
-
-    #circle1::after {
-        width: 6rem;
-        height: 6rem;
-        background-color: #292D33;
-        border: 25px solid #F2B705;
-        top: 0%;
-        left: 88%;
-        transform: translateX(-50%);
-        z-index: 2;
-        /* Detrás de la foto y el anuncio */
-    }
-
-
-    #circle2::after {
-        width: 8rem;
-        height: 8rem;
-        background-color: #F2B705;
-        border: 2px solid #F2B705;
-        bottom: 65%;
-        left: 20%;
-        transform: translateX(-50%);
-    }
-
-    #circle3::after {
-        width: 5rem;
-        height: 5rem;
-        background-color: #F2B705;
-        border: 2px solid #F2B705;
-        bottom: 2%;
-        left: 90%;
-        transform: translateX(-50%);
-        z-index: 1;
-        /* Detrás del anuncio */
-    }
-
-    #circle4::after {
-        width: 3rem;
-        height: 3rem;
-        background-color: #292D33;
-        border: 15px solid #F2B705;
-        bottom: 5%;
-        left: 7%;
-        transform: translateX(-50%);
-    }
-
-
-    .container-ciculo {
-        padding-top: 20rem;
-        height: 80%;
-    }
-
-    .container-card {
-        margin-top: 20px;
-        padding: 20px;
-        flex-direction: column;
-        /* Cambia la dirección del flex a columna */
-        align-items: center;
-        height: auto;
-        /* Permite que el contenedor crezca */
-        /* Centra las tarjetas cuando están apiladas */
     }
 
     .anuncio {
-        display: none;
+        display: block;
+        top: 90%;
+        width: 80%;
+        left: 48%;
+        animation-name: appear;
     }
 
     .anuncio-baner {
-        border-radius: 10%;
+        display: none;
     }
 
-    /****TORIBIA 1 Y TORIBIA 2*****/
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-arrow {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .ciculo-foto {
+        width: 15rem;
+        height: 15rem;
+        /* Asegura que la imagen cubra todo el círculo */
+        background-position: center;
+        /* Centra la imagen dentro del círculo */
+        /* background-color: yellow; */
+        border: 15px solid #F1C50E;
+        top: 35%;
+        left: -53%;
+
+    }
+
+    @keyframes move-right-mobile {
+        from {
+            transform: translate(0, -50%);
+        }
+
+        to {
+            transform: translate(calc(50vw - 50% + 30vw), -50%);
+        }
+    }
+
+    .anuncio {
+        position: absolute;
+        width: 87%;
+        /* Ancho del cuadro de anuncio */
+        padding: 1rem;
+        top: 98%;
+        left: -38%;
+        border-radius: 25px;
+        opacity: 0;
+        /* Empieza invisible */
+        animation: appear-from-right 0.8s ease-out forwards;
+        /* Usa la nueva animación*/
+        animation-delay: 3s;
+        /* Empieza al mismo tiempo que los otros círculos */
+        background-color: white;
+        /* Fondo blanco para que el texto sea legible */
+        /* La transformación inicial se maneja en la animación */
+        transform: translateY(-50%) translateX(100vw);
+        z-index: 10;
+        /* Asegura que esté por encima de los círculos */
+    }
+
+    .container-card {
+        margin-top: 8rem;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    /**toribia 1 y toribia 2 **/
+
+    .flex {
+        display: table-row-group;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        bottom: 0;
+    }
+
     .img {
-        width: 350px;
-        height: 300px;
-        border-radius: 15px;
-        border: 8px solid #F1C50E;
+        width: 300px;
+        height: 220px;
     }
 
     .mini-img {
         width: 50px;
         height: 50px;
-        border: 5px solid #F1C50E;
-        margin-top: -30px;
+        border: 3px solid #F1C50E;
+        margin-top: -20px;
+        margin-left: 2px;
+        margin-right: 2px;
         cursor: pointer;
-        border-radius: 50%;
-        object-fit: cover;
-        aspect-ratio: 1/1;
-        position: relative;
-        overflow: hidden;
-        top: 10%;
-        left: 0%;
-
+        border-radius: 70%;
     }
 
-    .nav-arrow {
-        color: #292D33;
-        font-size: 1.5rem;
-        margin-top: -30px; /* Reajuste para móvil */
+    .img-toribia {
+        width: 15rem;
+        height: 15rem;
     }
+
+    .text-toribia {
+        font-size: 1rem;
+    }
+
+    .text-toribia-titulo {
+        font-size: 1.2rem;
+    }
+
+
+
 }
 
-/********* Tabletas ********
-@media(min-width: 768px) and (max-width: 991px){
 
-}
-*/
-/******** Laptops/Escritorios pequeños ********/
-@media (min-width: 992px) and (max-width: 1199px){
-        
+@media (max-width: 488px) and (orientation: portrait) {
     .ciculo-foto {
-    
         width: 20rem;
         height: 20rem;
-        /*border: 20px solid #F1C50E;*/
-        border: 20px solid red;
-        top: 40%;
-        left: -50%;
-        /* Lo posicionamos fuera de la pantalla a la izquierda */
-    }
-
-    .ciculo-foto::after {
-        width: 30%;
-        height: 30%;
-        bottom: -15%;
-        left: 25%;
+        /* Asegura que la imagen cubra todo el círculo */
+        background-position: center;
+        /* Centra la imagen dentro del círculo */
+        /* background-color: yellow; */
+        border: 15px solid #F1C50E;
+        top: 35%;
+        left: -53%;
 
     }
 
-    #circle1::after {
-        width: 6rem;
-        height: 6rem;
-        background-color: #292D33;
-        border: 25px solid #F2B705;
-        top: 0%;
-        left: 88%;
-        transform: translateX(-50%);
-        z-index: 2;
-        /* Detrás de la foto y el anuncio */
-    }
+    @keyframes move-right-mobile {
+        from {
+            transform: translate(0, -50%);
+        }
 
-
-    #circle2::after {
-        width: 8rem;
-        height: 8rem;
-        background-color: #F2B705;
-        border: 2px solid #F2B705;
-        bottom: 65%;
-        left: 20%;
-        transform: translateX(-50%);
-    }
-
-    #circle3::after {
-        width: 5rem;
-        height: 5rem;
-        background-color: #F2B705;
-        border: 2px solid #F2B705;
-        bottom: 2%;
-        left: 90%;
-        transform: translateX(-50%);
-        z-index: 1;
-        /* Detrás del anuncio */
-    }
-
-    #circle4::after {
-        width: 3rem;
-        height: 3rem;
-        background-color: #292D33;
-        border: 15px solid #F2B705;
-        bottom: 5%;
-        left: 7%;
-        transform: translateX(-50%);
-    }
-
-
-    .container-ciculo {
-        padding-top: 20rem;
-        height: 80%;
-    }
-
-    .container-card {
-        margin-top: 20px;
-        padding: 20px;
-        flex-direction: column;
-        /* Cambia la dirección del flex a columna */
-        align-items: center;
-        height: auto;
-        /* Permite que el contenedor crezca */
-        /* Centra las tarjetas cuando están apiladas */
+        to {
+            transform: translate(calc(50vw - 50% + 30vw), -50%);
+        }
     }
 
     .anuncio {
-        display: none;
-    }
-
-    .anuncio-baner {
-        border-radius: 10%;
-    }
-
-    /****TORIBIA 1 Y TORIBIA 2*****
-    .img {
-        width: 350px;
-        height: 300px;
-        border-radius: 15px;
-        border: 8px solid #F1C50E;
-    }*/
-
-    .mini-img {
-        width: 50px;
-        height: 50px;
-        border: 5px solid #F1C50E;
-        margin-top: -30px;
-        cursor: pointer;
-        border-radius: 50%;
-        object-fit: cover;
-        aspect-ratio: 1/1;
-        position: relative;
-        overflow: hidden;
-        top: 10%;
-        left: 0%;
-
-    }
-
-    .nav-arrow {
-        color: #292D33;
-        font-size: 1.5rem;
-        margin-top: -30px; /* Reajuste para móvil */
-    }
-}
-
-/******* Escritorios grandes/TV *********/
-@media  (min-width: 1200px){
-
-} 
-
-/************
-Nuevos operadores de rango (Sintaxis Moderna)
-Permiten definir rangos más claros y concisos
-Para anchos entre 500px y 999px
-@media (500px <= width < 1000px){
-
-}
-*/
-/*************** MEDIA QUERY ***************/
-/* Media query para dispositivos móviles */
-@media (min-width: 768px) {
-    .anuncio-baner {
-        display: none;
-    }
-}
-
-/*
-@media (max-width: 768px) {
-    
-}*/
-
-
-/*******Para anchos de 768px o más.********/
-@media (width >= 768px) {
-.ciculo-foto {
-        width: 16rem;
-        height: 16rem;
-        border: 20px solid #F1C50E;
-        top: 40%;
-        left: -50%;
-        /* Lo posicionamos fuera de la pantalla a la izquierda */
-    }
-
-    .ciculo-foto::after {
-        width: 30%;
-        height: 30%;
-        bottom: -15%;
-        left: 25%;
-
-    }
-
-    #circle1::after {
-        width: 6rem;
-        height: 6rem;
-        background-color: #292D33;
-        border: 25px solid #F2B705;
-        top: 0%;
-        left: 88%;
-        transform: translateX(-50%);
-        z-index: 2;
-        /* Detrás de la foto y el anuncio */
-    }
-
-
-    #circle2::after {
-        width: 8rem;
-        height: 8rem;
-        background-color: #F2B705;
-        border: 2px solid #F2B705;
-        bottom: 65%;
-        left: 20%;
-        transform: translateX(-50%);
-    }
-
-    #circle3::after {
-        width: 5rem;
-        height: 5rem;
-        background-color: #F2B705;
-        border: 2px solid #F2B705;
-        bottom: 2%;
-        left: 90%;
-        transform: translateX(-50%);
-        z-index: 1;
-        /* Detrás del anuncio */
-    }
-
-    #circle4::after {
-        width: 3rem;
-        height: 3rem;
-        background-color: #292D33;
-        border: 15px solid #F2B705;
-        bottom: 5%;
-        left: 7%;
-        transform: translateX(-50%);
-    }
-
-
-    .container-ciculo {
-        padding-top: 20rem;
-        height: 80%;
+        position: absolute;
+        width: 87%;
+        /* Ancho del cuadro de anuncio */
+        padding: 1rem;
+        top: 98%;
+        left: -38%;
+        border-radius: 25px;
+        opacity: 0;
+        /* Empieza invisible */
+        animation: appear-from-right 0.8s ease-out forwards;
+        /* Usa la nueva animación*/
+        animation-delay: 3s;
+        /* Empieza al mismo tiempo que los otros círculos */
+        background-color: white;
+        /* Fondo blanco para que el texto sea legible */
+        /* La transformación inicial se maneja en la animación */
+        transform: translateY(-50%) translateX(100vw);
+        z-index: 10;
+        /* Asegura que esté por encima de los círculos */
     }
 
     .container-card {
-        margin-top: 20px;
-        padding: 20px;
-        flex-direction: column;
-        /* Cambia la dirección del flex a columna */
-        align-items: center;
+        margin-top: 8rem;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
         height: auto;
-        /* Permite que el contenedor crezca */
-        /* Centra las tarjetas cuando están apiladas */
     }
 
-    .anuncio {
-        display: none;
+    /**toribia 1 y toribia 2 **/
+
+    .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        bottom: 0;
+        margin-left: 20px;
     }
 
-    .anuncio-baner {
-        border-radius: 10%;
-    }
-
-    /****TORIBIA 1 Y TORIBIA 2*****/
     .img {
-        width: 600px;
-        height: 600px;
-        border-radius: 15px;
-        border: 8px solid #F1C50E;
+        width: 380px;
+        height: 290px;
     }
 
     .mini-img {
+        align-items: center;
+        justify-content: center;
         width: 50px;
         height: 50px;
-        border: 5px solid #F1C50E;
-        margin-top: -30px;
+        border: 3px solid #F1C50E;
+        margin-top: -20px;
+        margin-left: 10px;
+        margin-right: 2px;
         cursor: pointer;
-        border-radius: 50%;
-        object-fit: cover;
-        aspect-ratio: 1/1;
-        position: relative;
-        overflow: hidden;
-        top: 10%;
-        left: 0%;
-
+        border-radius: 70%;
     }
 
-    .nav-arrow {
-        color: #292D33;
-        font-size: 1.5rem;
-        margin-top: -30px; /* Reajuste para móvil */
+    .img-toribia {
+        width: 20rem;
+        height: 20rem;
     }
+
+    .text-toribia {
+        font-size: 1rem;
+    }
+
+    .text-toribia-titulo {
+        font-size: 1.2rem;
+    }
+
+
 
 }
 
-/****** Para anchos menores a 480px. ********
-@media (width < 480px){
+
+/* horizontal*/
+@media (max-width: 991px) and (orientation: landscape) {
+    .ciculo-foto {
+        width: 20rem;
+        height: 20rem;
+        /* Asegura que la imagen cubra todo el círculo */
+        background-position: center;
+        /* Centra la imagen dentro del círculo */
+        /* background-color: yellow; */
+        border: 15px solid #F1C50E;
+        top: 35%;
+        left: -48%;
+
+    }
+
+    .anuncio {
+        display: block;
+        top: 80%;
+        width: 80%;
+        left: 48%;
+        animation-name: appear;
+    }
+
 
 }
-
-*/

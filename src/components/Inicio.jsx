@@ -20,19 +20,19 @@ const Inicio = () => {
                         <div className="text-center">
                         <button type="button" class="btn btn-outline-warning border rounded-pill p-2">Reserva tu lugar</button>
                         </div>
-                        
-                        
                     </div>
                     <div id="circle3"></div>
                     <div id="circle4"></div>
                 </div>
-                <div className="anuncio-baner border border-dark border-5" >
+               
+               {/*  <div className="anuncio-baner border border-dark border-5" >
                     <h5 className="text-center p-2">Merlo San Luis</h5>
-                    <p className="text-left p-2">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate! </p>
-                    <div className="text-center p-2"> {/* Contenedor para centrar el botón */}
+                    <p className="text-center p-2">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate! </p>
+                    <div className="text-center p-2"> {/* Contenedor para centrar el botón }
                         <button className="btn btn-outline-warning border rounded-pill p-2">Reserva tu lugar</button>
                     </div>
-                </div>
+                </div> */}
+
                 <div className="container-card  d-flex justify-content-evenly ">
                     <div className="card">
                         <h2 className="title">

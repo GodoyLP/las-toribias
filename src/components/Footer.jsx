@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/stylefooter.css'; // Importamos los estilos del footer
+/*import '../styles/stylefooter.css'; // Importamos los estilos del footer*/
 
 const Footer = () => {
   return (
@@ -13,14 +13,17 @@ const Footer = () => {
           <Link to="/toribia-2">Cabaña Toribia II</Link>
           <Link to="/contacto">Contacto</Link>
         </p>
-        <p>Las Toribias &copy; 2024</p>
+        
       </div>
 
       <div className="footer-right">
         <a href="#"><i className="fab fa-facebook-f"></i></a>
-        <a href="#"><i className="fab fa-twitter"></i></a>
+        <a href="#"><i className="fab fa-instagram"></i></a>
         <a href="#"><i className="fab fa-linkedin-in"></i></a>
-        <a href="#"><i className="fab fa-github"></i></a>
+        <a href="#"><i className="fab fa-whatsapp"></i></a>
+      </div>
+      <div className="footer-center mt-3 aling-center text-center text-white">
+        <p>Las Toribias &copy; 2024</p>
       </div>
     </footer>
   );
