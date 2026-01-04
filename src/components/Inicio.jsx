@@ -1,7 +1,7 @@
 
 import fachadaToribia1 from '../imagenes/toribia-1/fachada_T1.webp';
 import piletaParque from '../imagenes/parque/pileta-T1.webp';
-import fachadaToribia2 from '../imagenes/Toribia-2/fachada-T2.webp';
+import fachadaToribia2 from '../imagenes/Toribia-2/fachada-T2.jpg';
 import React from 'react';
 
 
@@ -25,13 +25,7 @@ const Inicio = () => {
                     <div id="circle4"></div>
                 </div>
                
-               {/*  <div className="anuncio-baner border border-dark border-5" >
-                    <h5 className="text-center p-2">Merlo San Luis</h5>
-                    <p className="text-center p-2">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate! </p>
-                    <div className="text-center p-2"> {/* Contenedor para centrar el botón }
-                        <button className="btn btn-outline-warning border rounded-pill p-2">Reserva tu lugar</button>
-                    </div>
-                </div> */}
+               
 
                 <div className="container-card  d-flex justify-content-evenly ">
                     <div className="card">
