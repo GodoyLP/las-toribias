@@ -5,6 +5,8 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #292D33;
     color: black;
+
+
 }
 
 /********** INICIO ***************/
@@ -31,7 +33,7 @@ body {
 .ciculo-foto {
     width: 18rem;
     height: 18rem;
-    background-image: url('../src/imagenes/caminar-merlo.jpg');
+    background-image: url('../src/imagenes/fotos/caminar-merlo.webp');
     background-size: cover;
     /* Asegura que la imagen cubra todo el círculo */
     background-position: center;
@@ -209,19 +211,6 @@ body {
     /* Asegura que esté por encima de los círculos */
 }
 
-/*
-.anuncio-baner {
-    width: 90%;
-    height: auto;
-    border-radius: 8%;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 65%;
-    left: 5%;
-    background-color: white;
-    z-index: 20;
-}*/
 
 .container-card {
     margin-top: 12rem;
@@ -449,7 +438,322 @@ section {
 }
 
 /************Quiene somos **************************/
+.img-quienes-somos {
+    border-radius: 50%;
+    border: 1px solid #F1C50E;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    aspect-ratio: 1/1;
 
+
+}
+
+.text-quienes-somos {
+    list-style-type: none;
+    margin-top: 8%;
+    padding-left: 3%;
+    padding-bottom: 3px;
+    font-size: 1.2rem;
+    color: white;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.text-quienes-somos-titulo {
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: -1%;
+    font-size: 1.5rem;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 2%;
+    padding-left: 1%;
+}
+
+/* reseoñas */
+.nw-widget {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    box-sizing: border-box
+}
+
+.nw-header {
+    text-align: center;
+    margin-bottom: 30px
+}
+
+.nw-rating {
+    display: inline-block;
+    background: linear-gradient(135deg, #4285f4, #34a853);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(66, 133, 244, .3);
+    box-sizing: border-box
+}
+
+.nw-rating-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 8px
+}
+
+.nw-score {
+    font-size: 28px;
+    font-weight: 700
+}
+
+.nw-stars {
+    display: flex;
+    gap: 2px
+}
+
+.nw-star {
+    width: 20px;
+    height: 20px
+}
+
+.nw-count {
+    font-size: 14px;
+    opacity: .9
+}
+
+.nw-container {
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    margin-bottom: 25px
+}
+
+.nw-carousel {
+    overflow: hidden;
+    width: 100%
+}
+
+.nw-slides {
+    display: flex;
+    transition: transform .5s cubic-bezier(.25, .46, .45, .94);
+    width: 500%
+}
+
+.nw-slide {
+    width: 20%;
+    flex-shrink: 0;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box
+}
+
+.nw-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(255, 107, 107, .3);
+    flex-shrink: 0
+}
+
+.nw-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 12px
+}
+
+.nw-review-stars {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-bottom: 20px
+}
+
+.nw-review-star {
+    width: 18px;
+    height: 18px
+}
+
+.nw-text {
+    color: #4a5568;
+    line-height: 1.7;
+    font-size: 16px;
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto
+}
+
+.nw-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, .95);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .15);
+    transition: all .3s ease;
+    z-index: 10;
+    opacity: .8;
+    box-sizing: border-box
+}
+
+.nw-arrow:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1)
+}
+
+.nw-arrow-prev {
+    left: 15px
+}
+
+.nw-arrow-next {
+    right: 15px
+}
+
+.nw-arrow-icon {
+    width: 20px;
+    height: 20px;
+    fill: #4a5568;
+    transition: fill .3s ease
+}
+
+.nw-arrow:hover .nw-arrow-icon {
+    fill: #4285f4
+}
+
+.nw-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px
+}
+
+.nw-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    cursor: pointer;
+    transition: all .3s ease;
+    border: none;
+    padding: 0
+}
+
+.nw-dot:hover {
+    background: #a0aec0;
+    transform: scale(1.1)
+}
+
+.nw-dot.nw-active {
+    background: #4285f4;
+    transform: scale(1.3)
+}
+
+.nw-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    margin: 6px;
+    background: #4285f4;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all .3s ease;
+    box-shadow: 0 4px 15px rgba(66, 133, 244, .3);
+    box-sizing: border-box
+}
+
+.nw-btn:hover {
+    background: #3367d6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(66, 133, 244, .4)
+}
+
+.nw-icon {
+    width: 20px;
+    height: 20px
+}
+
+.nw-center {
+    text-align: center
+}
+
+@media(max-width:768px) {
+    .nw-widget {
+        padding: 15px
+    }
+
+    .nw-rating {
+        padding: 15px 20px
+    }
+
+    .nw-score {
+        font-size: 24px
+    }
+
+    .nw-slide {
+        padding: 30px 20px
+    }
+
+    .nw-avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 20px
+    }
+
+    .nw-name {
+        font-size: 18px
+    }
+
+    .nw-text {
+        font-size: 15px
+    }
+
+    .nw-arrow {
+        width: 40px;
+        height: 40px
+    }
+
+    .nw-arrow-prev {
+        left: 10px
+    }
+
+    .nw-arrow-next {
+        right: 10px
+    }
+
+    .nw-arrow-icon {
+        width: 16px;
+        height: 16px
+    }
+}
 
 /************Cabaña Toribia 1 y cabaña toribia 2 ****************************************/
 .container-toribia {
@@ -527,7 +831,7 @@ section {
     overflow: hidden;
     top: 0%;
     left: 0%;
-    background-color: aqua;
+
 
 }
 
@@ -562,155 +866,92 @@ li {
     padding-left: 1%;
 }
 
+/************************************************/
+/*       PREGUNTAS FRECUENTES                   */
+/************************************************/
 
-
-
-
-
-
-
-
-
-
-/********* Media Queries ****************/
-
-/* vertical*/
-@media (max-width: 991px) and (orientation: portrait) {
-    .ciculo-foto {
-        width: 22rem;
-        height: 22rem;
-        /* Asegura que la imagen cubra todo el círculo */
-        background-position: center;
-        /* Centra la imagen dentro del círculo */
-        /* background-color: yellow; */
-        border: 15px solid #F1C50E;
-        top: 40%;
-        left: -50%;
-
-    }
-
-    .anuncio {
-        display: block;
-        top: 90%;
-        width: 80%;
-        left: 48%;
-        animation-name: appear;
-    }
-
-    .anuncio-baner {
-        display: none;
-    }
-
-    .flex {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-arrow {
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 768px) and (orientation: portrait) {
-    .ciculo-foto {
-        width: 15rem;
-        height: 15rem;
-        /* Asegura que la imagen cubra todo el círculo */
-        background-position: center;
-        /* Centra la imagen dentro del círculo */
-        /* background-color: yellow; */
-        border: 15px solid #F1C50E;
-        top: 35%;
-        left: -53%;
-
-    }
-
-    @keyframes move-right-mobile {
-        from {
-            transform: translate(0, -50%);
-        }
-
-        to {
-            transform: translate(calc(50vw - 50% + 30vw), -50%);
-        }
-    }
-
-    .anuncio {
-        position: absolute;
-        width: 87%;
-        /* Ancho del cuadro de anuncio */
-        padding: 1rem;
-        top: 98%;
-        left: -38%;
-        border-radius: 25px;
-        opacity: 0;
-        /* Empieza invisible */
-        animation: appear-from-right 0.8s ease-out forwards;
-        /* Usa la nueva animación*/
-        animation-delay: 3s;
-        /* Empieza al mismo tiempo que los otros círculos */
-        background-color: white;
-        /* Fondo blanco para que el texto sea legible */
-        /* La transformación inicial se maneja en la animación */
-        transform: translateY(-50%) translateX(100vw);
-        z-index: 10;
-        /* Asegura que esté por encima de los círculos */
-    }
-
-    .container-card {
-        margin-top: 8rem;
-        gap: 15px;
-    }
-
-    .card {
-        width: 90%;
-        height: auto;
-    }
-
-    /**toribia 1 y toribia 2 **/
-
-    .flex {
-        display: table-row-group;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        bottom: 0;
-    }
-
-    .img {
-        width: 300px;
-        height: 220px;
-    }
-
-    .mini-img {
-        width: 50px;
-        height: 50px;
-        border: 3px solid #F1C50E;
-        margin-top: -20px;
-        margin-left: 2px;
-        margin-right: 2px;
-        cursor: pointer;
-        border-radius: 70%;
-    }
-
-    .img-toribia {
-        width: 15rem;
-        height: 15rem;
-    }
-
-    .text-toribia {
-        font-size: 1rem;
-    }
-
-    .text-toribia-titulo {
-        font-size: 1.2rem;
-    }
-
+.faq-section {
+    max-width: 80%;
+    
+    
+    border-radius: 12px;
+    margin-top: 5rem;
+    background-color: transparent;
+    
 
 
 }
 
+.faq-title {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 
+.faq-item+.faq-item {
+    margin-top: 16px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover,
+.faq-question.active {
+    background: #2952e3;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+
+    border-radius: 0 0 10px 10px;
+    padding: 0 20px;
+    font-size: 1rem;
+    
+}
+
+.faq-answer p {
+    margin: 14px 0;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    content: '−';
+    transform: rotate(180deg);
+}
+
+
+
+/************************************************/
+/*       NUEVA ESTRUCTURA DE MEDIA QUERIES      */
+/************************************************/
+
+/* --- CELULAR --- */
+
+/* Celular pequeño Vertical */
 @media (max-width: 488px) and (orientation: portrait) {
     .ciculo-foto {
         width: 20rem;
@@ -809,12 +1050,156 @@ li {
     }
 
 
+}
+
+/* Celular Vertical */
+@media (max-width: 767px) and (orientation: portrait) {}
+
+/* Celular Horizontal */
+@media (max-width: 915px) and (orientation: landscape) {
+    .ciculo-foto {
+        width: 22rem;
+        height: 22rem;
+        /* Asegura que la imagen cubra todo el círculo */
+        background-position: center;
+        /* Centra la imagen dentro del círculo */
+        /* background-color: yellow; */
+        border: 15px solid #F1C50E;
+        top: 40%;
+        left: -50%;
+
+    }
+
+    .anuncio {
+        display: block;
+        top: 90%;
+        width: 80%;
+        left: 48%;
+        animation-name: appear;
+    }
+
+    .anuncio-baner {
+        display: none;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-arrow {
+        margin-top: 10px;
+    }
 
 }
 
+/* --- TABLET --- */
 
-/* horizontal*/
-@media (max-width: 991px) and (orientation: landscape) {
+/* Tablet Vertical */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .ciculo-foto {
+        width: 15rem;
+        height: 15rem;
+        /* Asegura que la imagen cubra todo el círculo */
+        background-position: center;
+        /* Centra la imagen dentro del círculo */
+        /* background-color: yellow; */
+        border: 15px solid #F1C50E;
+        top: 35%;
+        left: -53%;
+
+    }
+
+    @keyframes move-right-mobile {
+        from {
+            transform: translate(0, -50%);
+        }
+
+        to {
+            transform: translate(calc(50vw - 50% + 30vw), -50%);
+        }
+    }
+
+    .anuncio {
+        position: absolute;
+        width: 87%;
+        /* Ancho del cuadro de anuncio */
+        padding: 1rem;
+        top: 98%;
+        left: -38%;
+        border-radius: 25px;
+        opacity: 0;
+        /* Empieza invisible */
+        animation: appear-from-right 0.8s ease-out forwards;
+        /* Usa la nueva animación*/
+        animation-delay: 3s;
+        /* Empieza al mismo tiempo que los otros círculos */
+        background-color: white;
+        /* Fondo blanco para que el texto sea legible */
+        /* La transformación inicial se maneja en la animación */
+        transform: translateY(-50%) translateX(100vw);
+        z-index: 10;
+        /* Asegura que esté por encima de los círculos */
+    }
+
+    .container-card {
+        margin-top: 8rem;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    /**toribia 1 y toribia 2 **/
+
+    .flex {
+        display: table-row-group;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        bottom: 0;
+    }
+
+    .img {
+        width: 300px;
+        height: 220px;
+    }
+
+    .mini-img {
+        width: 50px;
+        height: 50px;
+        border: 3px solid #F1C50E;
+        margin-top: -20px;
+        margin-left: 2px;
+        margin-right: 2px;
+        cursor: pointer;
+        border-radius: 70%;
+    }
+
+    .img-toribia {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .text-toribia {
+        font-size: 1rem;
+    }
+
+    .text-toribia-titulo {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Tablet Horizontal */
+@media (min-width: 916px) and (max-width: 1280px) and (orientation: landscape) {
+
+    .telefono {
+        display: none !important;
+    }
+
     .ciculo-foto {
         width: 20rem;
         height: 20rem;
@@ -831,9 +1216,86 @@ li {
     .anuncio {
         display: block;
         top: 80%;
-        width: 80%;
+        width: 60%;
         left: 48%;
         animation-name: appear;
+    }
+
+}
+
+/* --- NOTEBOOK --- */
+
+/* Notebook Horizontal */
+@media (min-width: 1281px) and (orientation: landscape) {
+    .ciculo-foto {
+        width: 38rem;
+        height: 38rem;
+        /* Asegura que la imagen cubra todo el círculo */
+        background-position: center;
+        /* Centra la imagen dentro del círculo */
+        /* background-color: yellow; */
+        border: 15px solid #F1C50E;
+        top: 75%;
+        left: -48%;
+    }
+
+    .ciculo-foto::after {
+        width: 10rem;
+        height: 10rem;
+
+        /* Un tono de amarillo dorado */
+        bottom: -10%;
+        left: 25%;
+
+    }
+
+    #circle1::after {
+
+        width: 10rem;
+        height: 10rem;
+        top: 7%;
+        left: 68%;
+    }
+
+
+    #circle2::after {
+
+        width: 10rem;
+        height: 10rem;
+        bottom: 50%;
+        left: 15%;
+    }
+
+    #circle3::after {
+
+        width: 10rem;
+        height: 10rem;
+        bottom: -35%;
+        left: 80%;
+    }
+
+    #circle4::after {
+
+        width: 12rem;
+        height: 12rem;
+        bottom: -30%;
+        left: 10%;
+
+    }
+
+
+
+    .anuncio {
+        display: block;
+        width: 30%;
+        top: 110%;
+        left: 60%;
+        animation-name: appear;
+    }
+
+
+    .card {
+        margin-top: 8rem;
     }
 
 
