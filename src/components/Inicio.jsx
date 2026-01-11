@@ -63,7 +63,7 @@ const Inicio = () => {
                         <h2 className="title">
                             <a href="#">Toribia II </a>
                         </h2>
-                        <div className="bg-gray-500" h-1  ></div>
+                        <div className="bg-gray-500"></div>
                         <p className="text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
                         </p>

@@ -1,4 +1,5 @@
-import React, { useState } from 'https://cdn.skypack.dev/react@18.2.0';
+/* COMPONENTE DESACTIVADO PARA EVITAR ERRORES DE BUILD EN VERCEL
+import React, { useState } from 'https://cdn.skypack.dev/react@18.2.0'; // Las importaciones CDN rompen el build
 import ReactDOM from 'https://cdn.skypack.dev/react-dom@18.2.0';
 
 const CarruselImagen = () => {
@@ -53,3 +54,9 @@ const Images = (props) => {
 }
 
 ReactDOM.render(<CarruselImagen />, document.querySelector("#app"));
+*/
+
+const CarruselImagen = () => {
+  return null;
+}
+export default CarruselImagen;
