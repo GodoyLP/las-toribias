@@ -1,8 +1,8 @@
 
 import fachadaToribia1 from '../imagenes/toribia-1/fachada_T1.webp';
 import piletaParque from '../imagenes/parque/pileta-T1.webp';
-import fachadaToribia2 from '../imagenes/Toribia-2/fachada-T2.jpg';
-import React from 'react';
+import fachadaToribia2 from '../imagenes/toribia-2/fachada-T2.webp';
+
 
 
 const Inicio = () => {

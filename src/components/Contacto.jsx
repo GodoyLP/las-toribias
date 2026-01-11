@@ -1,15 +1,50 @@
 import { useState } from "react";
 
-const mapa = "https://www.google.com/maps/d/embed?mid=1scLHVPTD-4yGy2-BxTSUUjRayKeJ6tc&ehbc=2E312F&noprof=1"
+const mapa1 = "https://www.google.com/maps/d/embed?mid=1scLHVPTD-4yGy2-BxTSUUjRayKeJ6tc&ehbc=2E312F&noprof=1"
+const mapa2 = "https://www.google.com/maps/d/embed?mid=1oo0dlM4UWhCpIV1ba3YCOj3hY4TCCgw&hl=es-419&ehbc=2E312F"
+
+
 
 const Contacto = () => {
     const [enviado, setEnviado] = useState(false);
+    const [mapaActual, setMapaActual] = useState(mapa1);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         const form = e.target;
         const data = new FormData(form);
         const email = data.get("email");
+        const nombre = data.get("nombre");
+        const apellido = data.get("apellido");
+        const telefono = data.get("phone");
+
+        if (nombre.length > 15) {
+            alert("El nombre no puede tener más de 15 caracteres.");
+            return;
+        }
+
+        if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(nombre)) {
+            alert("El nombre solo debe contener letras.");
+            return;
+        }
+
+        if (apellido.length > 15) {
+            alert("El apellido no puede tener más de 15 caracteres.");
+            return;
+        }
+
+        if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(apellido)) {
+            alert("El apellido solo debe contener letras.");
+            return;
+        }
+
+        if (!/^\d{3}-\d{4}-\d{4}$/.test(telefono)) {
+            alert("El número de teléfono debe tener el formato XXX-XXxX-XXXX.");
+            return;
+        }
+
+
+
         const dominiosValidos = ["@gmail.com", "@outlook.com", "@hotmail.com", "@yahoo.com"];
 
         if (!dominiosValidos.some(dominio => email.toLowerCase().endsWith(dominio))) {
@@ -35,6 +70,14 @@ const Contacto = () => {
             }
         } catch (error) {
             console.error("Error al enviar:", error);
+        }
+    };
+
+    const vermapa = (valor) => {
+        if (valor === 1) {
+            setMapaActual(mapa1);
+        } else {
+            setMapaActual(mapa2);
         }
     };
 
@@ -110,16 +153,21 @@ const Contacto = () => {
                         )}
                     </div>
                 </div>
+                <h3>Como llegar</h3>
                 <div className="contact-container container grid">
+                    
                     <div className="contact-content ">
-
+                        <p>Elija donde quier llegar apretando el boton correspondiente</p>
+                        <button className="btn btn-warning m-2" onClick={() => vermapa(1)}>Las Toribias I</button>
+                        <button className="btn btn-warning m-2" onClick={() => vermapa(2)}>Las Toribias II</button>
                     </div>
+                    
                     <div className="contact-content ">
 
                      
 
                         <iframe
-                            src={mapa}
+                            src={mapaActual}
                             width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
