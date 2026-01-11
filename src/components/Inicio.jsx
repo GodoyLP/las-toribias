@@ -18,7 +18,7 @@ const Inicio = () => {
                         <h5 className="text-left ">Merlo San Luis</h5>
                         <p className="text-left">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate! </p>
                         <div className="text-center">
-                        <button type="button" class="btn btn-outline-warning border rounded-pill p-2">Reserva tu lugar</button>
+                        <button type="button" className="btn btn-outline-warning border rounded-pill p-2">Reserva tu lugar</button>
                         </div>
                     </div>
                     <div id="circle3"></div>

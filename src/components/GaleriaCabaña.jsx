@@ -39,7 +39,7 @@ const Images = ({ images, selectedUrl, onImageSelect }) => {
         &#10094;
       </button>
       {visibleImages.map((data) => (
-        <img id="mini-img"
+        <img
           className={`mini-img ${selectedUrl === data.url ? 'selected' : ''}`}
          
           key={data.url}

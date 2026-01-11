@@ -89,17 +89,17 @@ const Toribia_1 = () => {
   return (
 
 
-    <div class="mt-5 pt-5 d-flex flex-column mb-3">
-      <div class="p-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 text-center">
+    <div className="mt-5 pt-5 d-flex flex-column mb-3">
+      <div className="p-2">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6 text-center">
               <img className="img-toribia" src={fachadaToribia1} alt="Fachada cabaña Toribia 1" />
             </div>
-            <div class="text-toribia col-sm-3">
+            <div className="text-toribia col-sm-3">
               Disfruta de la tranquilidad y el confort en nuestra segunda cabaña, equipada con todo lo necesario para una estadía inolvidable.
             </div>
-            <div class="text-toribia col-sm-3">
+            <div className="text-toribia col-sm-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Nostrum quo veritatis delectus repellat. Vel veritatis labore deleniti,
               beatae distinctio explicabo hic consequuntur amet! Doloribus soluta,
@@ -114,11 +114,11 @@ const Toribia_1 = () => {
 
 
 
-        <div class="p-2 mt-4">
+        <div className="p-2 mt-4">
 
-          <div class="row">
+          <div className="row">
             <div className='text-toribia-titulo'><h2>¿Que ofrece la cabaña las toribia I ? </h2></div>
-            <div class="text-toribia col-sm-6">
+            <div className="text-toribia col-sm-6">
 
               <ul >
                 <li><img src={Wiffi} className="theme-colors-second" alt="wiffi" width="50" height="50" /> Wiffi.</li>
@@ -130,7 +130,7 @@ const Toribia_1 = () => {
                 {/*<img src={Tvgif} className="theme-colors-second" alt="WhatsApp" width="50" height="50" />*/}
               </ul>
             </div>
-            <div class="text-toribia col-sm-6">
+            <div className="text-toribia col-sm-6">
               <ul>
                 <li><img src={parrilla} className="theme-colors-second" alt="parilla exterior" width="60" height="60" /> Parrilla y espacio exterior.</li>
                 <li><img src={estacionamiento} className="theme-colors-second" alt="estacionamiento" width="60" height="60"/>Estacionamiento gratuito</li>
