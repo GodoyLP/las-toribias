@@ -2,7 +2,7 @@ import React from 'react';
 import GaleriaCabaña from './GaleriaCabaña';
 import fachadaToribia2 from '../imagenes/toribia-2/fachada-T2.webp';
 import bañoToribia2 from '../imagenes/toribia-2/banio-T2.webp';
-import cocinaToribia2 from '../imagenes/toribia-2/cocina-T2.webp';
+/*import cocinaToribia2 from '../imagenes/toribia-2/cocina-T2.webp';*/
 import cocina2Toribia2 from '../imagenes/toribia-2/cocina-2-T2.webp';
 import cocina3Toribia2 from '../imagenes/toribia-2/cocina-3-T2.webp';
 import cocina4Toribia2 from '../imagenes/toribia-2/cocina-4-T2.webp';
