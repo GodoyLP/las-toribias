@@ -10,7 +10,7 @@ import comedor1Toribia2 from '../imagenes/toribia-2/comedor-1-T2.webp';
 import comedor2Toribia2 from '../imagenes/toribia-2/comedor-2-T2.webp';
 import comedor3Toribia2 from '../imagenes/toribia-2/comedor-3-T2.webp';
 
-import dormitorioNiñoToribia2 from '../imagenes/toribia-2/habitacion-niño-T2.webp';
+import dormitorioNiñoToribia2 from '../imagenes/toribia-2/habitacion-ninio-T2.webp';
 import dormitorioAdultoToribia2 from '../imagenes/toribia-2/habitacion-Adulto-T2.webp';
 import livingToribia2 from '../imagenes/toribia-2/living-1-T2.webp';
 

@@ -4,7 +4,7 @@ import fachadaToribia1 from '../imagenes/toribia-1/fachada_T1.webp';
 import bañoToribia1 from '../imagenes/toribia-1/banio-T1.webp';
 import cocina2Toribia1 from '../imagenes/toribia-1/cocina-T1.webp';
 import entradaToribia1 from '../imagenes/toribia-1/entrada-T1.webp';
-import dormitorioNiñoToribia1 from '../imagenes/toribia-1/habitacion-niño-T1.webp';
+import dormitorioNiñoToribia1 from '../imagenes/toribia-1/habitacion-ninio-T1-T1.webp';
 import dormitorioAdultoToribia1 from '../imagenes/toribia-1/habitacion-T1.webp';
 import livingToribia1 from '../imagenes/toribia-1/living-T1.webp';
 
