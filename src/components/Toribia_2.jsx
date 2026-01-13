@@ -1,7 +1,7 @@
 import React from 'react';
 import GaleriaCabaña from './GaleriaCabaña';
 import fachadaToribia2 from '../imagenes/toribia-2/fachada-T2.webp';
-import bañoToribia2 from '../imagenes/Toribia-2/banio-T2.webp';
+import bañoToribia2 from '../imagenes/toribia-2/banio-T2.webp';
 import cocinaToribia2 from '../imagenes/toribia-2/cocina-T2.webp';
 import cocina2Toribia2 from '../imagenes/toribia-2/cocina-2-T2.webp';
 import cocina3Toribia2 from '../imagenes/toribia-2/cocina-3-T2.webp';
@@ -10,9 +10,9 @@ import comedor1Toribia2 from '../imagenes/toribia-2/comedor-1-T2.webp';
 import comedor2Toribia2 from '../imagenes/toribia-2/comedor-2-T2.webp';
 import comedor3Toribia2 from '../imagenes/toribia-2/comedor-3-T2.webp';
 
-import dormitorioNiñoToribia2 from '../imagenes/Toribia-2/habitacion-niño-T2.webp';
-import dormitorioAdultoToribia2 from '../imagenes/Toribia-2/habitacion-Adulto-T2.webp';
-import livingToribia2 from '../imagenes/Toribia-2/living-1-T2.webp';
+import dormitorioNiñoToribia2 from '../imagenes/toribia-2/habitacion-niño-T2.webp';
+import dormitorioAdultoToribia2 from '../imagenes/toribia-2/habitacion-Adulto-T2.webp';
+import livingToribia2 from '../imagenes/toribia-2/living-1-T2.webp';
 
 import Wiffi from '../imagenes/iconos/gif/wifi-hover-flicker.gif';
 import Pisina from '../imagenes/iconos/gif/swimming-hover-pinch.gif';
