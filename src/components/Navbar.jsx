@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import telefonoGif from '../imagenes/iconos/gif/call-phone-hover-phone-ring.gif';
-import watsappGif from '../imagenes/iconos/gif/whatsapp-hover-pinch.gif';
+
 
 const Navbar = () => {
     return (
@@ -40,9 +40,7 @@ const Navbar = () => {
 
                         {/* Contenedor para los íconos y el teléfono. Se alinea a la derecha. */}
                         <div className="d-flex flex-row align-items-center">
-                            <a className="telefono text-decoration-none text-dark" href="https://wa.me/5491112345678" target="_blank" rel="noopener noreferrer">
-                                <img src={watsappGif} className="theme-colors-second" alt="WhatsApp" width="50" height="50"/>
-                            </a>
+                            
                             <a className="telefono text-decoration-none text-dark ms-2" href="tel:+541112345678">
                                 <img src={telefonoGif} className="theme-colors-second" alt="Llamar por teléfono" width="35" height="35"/>
                             </a>

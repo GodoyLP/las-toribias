@@ -106,9 +106,7 @@ const Toribia_1 = () => {
               facere porro obcaecati culpa nam!
 
             </div>
-            <div>
-              <div id="circle5"></div>
-            </div>
+            
           </div>
         </div>
 

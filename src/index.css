@@ -5,8 +5,41 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #292D33;
     color: black;
+}
 
+/* Cambia el icono de hamburguesa por una X cuando el menú está abierto */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6L24 24M24 6L6 24'/%3e%3c/svg%3e");
+}
 
+/* Botón flotante de WhatsApp */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    /* Asegura que esté por encima de todo */
+    background-color: white;
+    /* Fondo blanco para resaltar el icono */
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.btn-whatsapp img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /********** INICIO ***************/
@@ -15,8 +48,6 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-
-
 
 .main {
     margin: 90px 0;
@@ -28,74 +59,6 @@ body {
     min-height: 100vh;
     /* Asegura que ocupe al menos toda la altura de la pantalla */
     width: 100vw;
-}
-
-.ciculo-foto {
-    width: 18rem;
-    height: 18rem;
-    background-image: url('../src/imagenes/fotos/caminar-merlo.webp');
-    background-size: cover;
-    /* Asegura que la imagen cubra todo el círculo */
-    background-position: center;
-    /* Centra la imagen dentro del círculo */
-    /* background-color: yellow; */
-    border: 15px solid #F1C50E;
-    border-radius: 50%;
-    position: absolute;
-    top: 35%;
-    left: -50%;
-    /* Lo posicionamos fuera de la pantalla a la izquierda */
-    transform: translateY(-50%);
-    animation: move-right 3s linear forwards;
-    z-index: 5;
-    /* Asegura que la foto esté por encima de los círculos */
-    /* Aplica la animación de 3 segundos */
-}
-
-
-/* Define los pasos de la animación "move-right" */
-@keyframes move-right {
-    from {
-        transform: translate(0, -50%);
-        /* Desde su posición inicial fuera de la pantalla */
-    }
-
-    to {
-        /* Mueve el círculo hasta que su centro (50% de su ancho) esté en el centro de la pantalla (50vw) */
-        transform: translate(calc(50vw - 50% + 40vw), -50%);
-    }
-}
-
-/* Define la animación para que el anuncio aparezca de derecha a izquierda */
-@keyframes appear-from-right {
-    from {
-        opacity: 0;
-        /* Mantenemos el translateY y movemos el elemento fuera de la pantalla a la derecha */
-        transform: translateY(-50%) translateX(100vw);
-    }
-
-    to {
-        opacity: 1;
-        /* Posición final del anuncio */
-        transform: translateY(-50%) translateX(50%);
-    }
-}
-
-/* Define la animación para que el círculo amarillo aparezca */
-@keyframes appear {
-    from {
-        opacity: 0;
-        /* Empieza invisible */
-        transform: translate(-50%, 20px);
-        /* Empieza un poco más abajo */
-    }
-
-    to {
-        opacity: 1;
-        /* Termina completamente visible */
-        transform: translateX(-50%);
-        /* Termina en su posición final */
-    }
 }
 
 /* Creamos el círculo amarillo usando un pseudo-elemento */
@@ -112,84 +75,21 @@ body {
     margin-right: auto;
 }
 
-/* Estilos base para los pseudo-elementos de los círculos decorativos */
-.ciculo-foto::after,
-.circle1::after,
-#circle1::after,
-#circle2::after,
-#circle3::after,
-#circle4::after {
-    content: '';
-    /* Requerido para que el pseudo-elemento se muestre */
-    position: absolute;
+.carousel-inner {
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
-    /* Lo hacemos redondo */
-    opacity: 0;
-    /* Empieza invisible por defecto */
-    animation: appear 0.5s ease-out forwards;
-    /* Aplica la animación "appear" */
-    animation-delay: 3s;
-    /* Espera 3 segundos antes de empezar */
-}
-
-.ciculo-foto::after {
-    width: 4rem;
-    height: 4rem;
-    background-color: #F1C50E;
-    border: 30px solid #F1C50E;
-    /* Un tono de amarillo dorado */
-    bottom: -10%;
-    left: 25%;
-    transform: translateX(-50%);
-}
-
-#circle1::after {
-    width: 6rem;
-    height: 6rem;
-    background-color: #292D33;
-    border: 28px solid #F2B705;
-    top: 0%;
-    left: 80%;
-    transform: translateX(-50%);
-    z-index: 2;
-    /* Detrás de la foto y el anuncio */
-}
-
-
-#circle2::after {
-    width: 7rem;
-    height: 7rem;
-    background-color: #F2B705;
-    border: 2px solid #F2B705;
-    bottom: 82%;
-    left: 20%;
-    transform: translateX(-50%);
-}
-
-#circle3::after {
-    width: 6rem;
-    height: 6rem;
-    background-color: #F2B705;
-    border: 2px solid #F2B705;
-    bottom: 13%;
-    left: 80%;
-    transform: translateX(-50%);
-    z-index: 1;
-    /* Detrás del anuncio */
-}
-
-#circle4::after {
-    width: 9rem;
-    height: 9rem;
-    background-color: #292D33;
     border: 24px solid #F2B705;
     bottom: 4%;
-    left: 2%;
-    transform: translateX(-50%);
+    left: 4%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
 }
 
 .anuncio {
-    display: none;
     position: absolute;
     width: 450px;
     /* Ancho del cuadro de anuncio */
@@ -197,20 +97,9 @@ body {
     top: 110%;
     left: 35%;
     border-radius: 25px;
-    opacity: 0;
-    /* Empieza invisible */
-    animation: appear-from-right 0.8s ease-out forwards;
-    /* Usa la nueva animación */
-    animation-delay: 3s;
-    /* Empieza al mismo tiempo que los otros círculos */
+    opacity: 1;
     background-color: white;
-    /* Fondo blanco para que el texto sea legible */
-    /* La transformación inicial se maneja en la animación */
-    transform: translateY(-50%) translateX(100vw);
-    z-index: 10;
-    /* Asegura que esté por encima de los círculos */
 }
-
 
 .container-card {
     margin-top: 12rem;
@@ -222,7 +111,6 @@ body {
     gap: 25px;
     /* Espacio entre tarjetas */
 }
-
 
 
 /******CARD INICIO*******/
@@ -272,7 +160,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(5px);
+    /*backdrop-filter: blur (5px);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -416,26 +304,6 @@ section {
     transition: all .25s;
 }
 
-/*
-.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
-
-.footer-distributed p.footer-links a:hover{text-decoration:underline;}
-*/
-
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-right {
-    text-align: center;
-}
-
-.footer-distributed .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-}
-
-.footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-}
 
 /************Quiene somos **************************/
 .img-quienes-somos {
@@ -445,8 +313,6 @@ section {
     height: 15rem;
     object-fit: cover;
     aspect-ratio: 1/1;
-
-
 }
 
 .text-quienes-somos {
@@ -831,14 +697,11 @@ li {
     overflow: hidden;
     top: 0%;
     left: 0%;
-
-
 }
 
 .carrusel-toribia {
     padding: 5%;
     margin-top: 3%;
-
 }
 
 .text-toribia {
@@ -872,23 +735,15 @@ li {
 
 .faq-section {
     max-width: 80%;
-    
-    
     border-radius: 12px;
     margin-top: 5rem;
     background-color: transparent;
     text-decoration: none;
-    
-
-
 }
 
 .faq-title {
     text-align: center;
     font-size: 1.9rem;
-   /* margin-bottom: 28px;
-    font-weight: 700;
-    letter-spacing: 1px;*/
     color: whitesmoke;
     text-decoration: none;
 }
@@ -900,13 +755,11 @@ li {
 .faq-question {
     width: 100%;
     text-align: left;
-    
     border: none;
     padding: 15px 20px;
     border-radius: 10px;
     font-size: 1.1rem;
     font-weight: 600;
-    
     cursor: pointer;
     transition: background 0.3s ease;
     display: flex;
@@ -923,11 +776,9 @@ li {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.35s ease;
-
     border-radius: 0 0 10px 10px;
     padding: 0 20px;
     font-size: 1rem;
-    
 }
 
 .faq-answer p {
@@ -949,189 +800,206 @@ li {
 /************************************************/
 /*               CONTACTO                       */
 /************************************************/
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-Main - Contact */
+
 .section {
-  min-height: 100vh; /* Ocupa al menos toda la altura de la pantalla */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra verticalmente el contenido */
-  background-color: #292D33;
-  
-  margin-top: 20px;
-  text-decoration: none;
+    min-height: 100vh;
+    /* Ocupa al menos toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+    background-color: #292D33;
+    margin-top: 20px;
+    text-decoration: none;
 }
 
-.contact{
-  height: auto;
-  padding-top: 5rem; /* Ajusta el padding superior para el navbar */
-  padding-bottom: 2rem;
+.contact {
+    height: auto;
+    padding-top: 5rem;
+    /* Ajusta el padding superior para el navbar */
+    padding-bottom: 2rem;
 }
 
 /* Elimina el subrayado de cualquier enlace dentro de la sección de contacto */
 .contact a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .contact-container {
-  display: grid;
-  
-  grid-template-columns: 300px 340px;
-  column-gap: 3rem;
-  justify-content: center;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 300px 340px;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
     padding-bottom: 2rem;
 }
+
 .contact-info {
-  display: grid;
-  row-gap: 1rem;
+    display: grid;
+    row-gap: 1rem;
 }
 
 .contact-content-form {
-  border: 2px solid #F2B705;
-  border-radius: 15px;
-  padding: 2rem;
+    border: 2px solid #F2B705;
+    border-radius: 15px;
+    padding: 2rem;
 }
 
 .contact-content-form .contact-button {
-  color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 100%;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .contact-card {
-  background-color: #F2B705;
-  color: #292D33;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  text-align: center;
-  
-  cursor: pointer;
+    background-color: #F2B705;
+    color: #292D33;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
 }
 
 /* Asegura que ningún elemento dentro de la tarjeta tenga subrayado */
 .contact-card * {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 .contact-card-icon {
-   text-decoration: none;
-  font-size: 1.8rem;
- /* color: var(--title-color);*/
-  margin-bottom: var(--mb025);
+    text-decoration: none;
+    font-size: 1.8rem;
+    /* color: var(--title-color);*/
+    margin-bottom: var(--mb025);
 }
+
 .contact-card-title,
 .contact-card-data {
-  
-  font-size: var(--small-font-size);
+
+    font-size: var(--small-font-size);
 }
+
 .contact-card-title {
-  font-weight: var(--font-medium);
+    font-weight: var(--font-medium);
 }
+
 .contact-card-data {
-  display: block;
-  margin-bottom: var(--mb075);
+    display: block;
+    margin-bottom: var(--mb075);
 }
+
 .contact-button {
-  /*color: var(--skin-color);*/
-  font-size: var(--small-font-size);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 0.25rem;
-  cursor: pointer;
+    /*color: var(--skin-color);*/
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.25rem;
+    cursor: pointer;
 }
+
 .contact-button-icon {
-  font-size: 1rem;
-  transition: 0.4s;
+    font-size: 1rem;
+    transition: 0.4s;
 }
+
 .contact-button:hover .contact-button-icon {
-  transform: translateX(0.25rem);
+    transform: translateX(0.25rem);
 }
+
 .input-container {
-  border: 2px solid #F2B705;
-  background-color:rgb(240, 240, 111);
-  color:#636E63;
+    border: 2px solid #F2B705;
+    background-color: rgb(240, 240, 111);
+    color: #636E63;
     border-radius: 15px;
-  position: relative;
-  margin-top: 1rem;
-  margin-bottom: 1.9rem;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1.9rem;
 }
+
 .input {
-  width: 100%;
-  border: 2px solid var(--text-color);
-  background-color: transparent;
-  padding: 0.6rem 1.2rem;
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-  font-size: var(--normal-font-size);
-  letter-spacing: 0.5px;
-  border-radius: 0.5rem;
-  outline: none;
-  transition: 0.4s;
+    width: 100%;
+    border: 2px solid var(--text-color);
+    background-color: transparent;
+    padding: 0.6rem 1.2rem;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+    letter-spacing: 0.5px;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: 0.4s;
 }
+
 textarea.input {
-  padding: 0.8rem 1.2rem;
-  min-height: 140px;
-  border-radius: 0.5rem;
-  resize: none;
-  font-family: var(--body-font);
+    padding: 0.8rem 1.2rem;
+    min-height: 140px;
+    border-radius: 0.5rem;
+    resize: none;
+    font-family: var(--body-font);
 }
+
 .input-container label {
-  position: absolute;
-  top: 50%;
-  left: 1rem;
-  transform: translateY(-50%);
-  padding: 0 0.4rem;
-  color: var(--text-color);
-  font-size: 1rem;
-  font-weight: var(--font-medium);
-  pointer-events: none;
-  z-index: 15;
-  transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: var(--font-medium);
+    pointer-events: none;
+    z-index: 15;
+    transition: 0.5s;
 }
 
 .input-container.textarea label {
-  top: 1rem;
-  transform: translateY(0);
+    top: 1rem;
+    transform: translateY(0);
 }
+
 .input-container span {
-  position: absolute;
-  top: 0;
-  left: 25px;
-  transform: translateY(-50%);
-  font-size: var(--small-font-size);
-  padding: 0 0.4rem;
-  pointer-events: none;
-  z-index: var(--z-fixed);
-  color: transparent;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: var(--small-font-size);
+    padding: 0 0.4rem;
+    pointer-events: none;
+    z-index: var(--z-fixed);
+    color: transparent;
 }
+
 .input-container span::before,
 .input-container span::after {
-  content: "";
-  position: absolute;
-  width: 10%;
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: 0.4s;
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: 0.4s;
 }
+
 .input-container span::before {
-  left: 50%;
+    left: 50%;
 }
+
 .input-container span::after {
-  right: 50%;
+    right: 50%;
 }
+
 .input-container.focus label {
-  top: 0;
-  transform: translateY(-100%);
-  left: 25px;
-  font-size: var(--smaller-font-size);
+    top: 0;
+    transform: translateY(-100%);
+    left: 25px;
+    font-size: var(--smaller-font-size);
 }
+
 .input-container.focus span::before,
 .input-container.focus span::after {
-  width: 50%;
-  opacity: 1;
+    width: 50%;
+    opacity: 1;
 }
 
 /* Darken contact card icons and buttons */
@@ -1139,93 +1007,93 @@ textarea.input {
 .contact-button,
 .input-container label,
 .button {
-  color: var(--title-color);
+    color: var(--title-color);
 }
 
 /* Darken input placeholders */
 .input::-webkit-input-placeholder,
 .textarea::-webkit-input-placeholder {
-  color: var(--text-color);
+    color: var(--text-color);
 }
 
 /* Darken textarea focus underline */
 .input-container.focus span::before,
 .input-container.focus span::after {
-  background-color: var(--title-color);
+    background-color: var(--title-color);
 }
 
 /* Theme Switcher Styles */
 .theme-switcher {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
 }
 
 .theme-button {
-  background-color: var(--skin-color);
-  color: var(--title-color);
-  padding: 0.5rem;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  transition: 0.3s;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: 0.3s;
 }
 
 .theme-button:hover {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .theme-options {
-  position: absolute;
-  right: 0;
-  top: 4rem;
-  background-color: #636E63;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  display: none;
-  flex-direction: column;
-  gap: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    background-color: #636E63;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .theme-switcher.active .theme-options {
-  display: flex;
+    display: flex;
 }
 
 .theme-label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.3rem;
-  cursor: pointer;
-  font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 0.875rem;
 }
 
 .theme-label::before {
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  background-color: var(--theme-preview);
-  border-radius: 50%;
-  display: inline-block;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--theme-preview);
+    border-radius: 50%;
+    display: inline-block;
 }
 
 input[type="radio"] {
-  display: none;
+    display: none;
 }
 
-input[type="radio"]:checked + .theme-label {
-  background-color: var(--skin-color);
-  color: var(--title-color);
+input[type="radio"]:checked+.theme-label {
+    background-color: var(--skin-color);
+    color: var(--title-color);
 }
 
-.button-contacto{
-  background-color: #F2B705;
-  color: #292D33;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 100%;
+.button-contacto {
+    background-color: #F2B705;
+    color: #292D33;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
 
 }
 
@@ -1236,65 +1104,30 @@ input[type="radio"]:checked + .theme-label {
 /* --- CELULAR --- */
 
 @media screen and (max-width: 350px) {
-  .container {
-    margin-left: var(--mb1);
-    margin-right: var(--mb1);
-  }
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
+    .container {
+        margin-left: var(--mb1);
+        margin-right: var(--mb1);
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
 }
-
-
-
-
 
 
 /* Celular pequeño Vertical */
 @media (max-width: 488px) and (orientation: portrait) {
-    .ciculo-foto {
-        width: 20rem;
-        height: 20rem;
-        /* Asegura que la imagen cubra todo el círculo */
-        background-position: center;
-        /* Centra la imagen dentro del círculo */
-        /* background-color: yellow; */
-        border: 15px solid #F1C50E;
-        top: 35%;
-        left: -53%;
-
-    }
-
-    @keyframes move-right-mobile {
-        from {
-            transform: translate(0, -50%);
-        }
-
-        to {
-            transform: translate(calc(50vw - 50% + 30vw), -50%);
-        }
-    }
 
     .anuncio {
         position: absolute;
         width: 87%;
         /* Ancho del cuadro de anuncio */
         padding: 1rem;
-        top: 98%;
-        left: -38%;
+        top: 80%;
+        left: 7%;
         border-radius: 25px;
-        opacity: 0;
-        /* Empieza invisible */
-        animation: appear-from-right 0.8s ease-out forwards;
-        /* Usa la nueva animación*/
-        animation-delay: 3s;
-        /* Empieza al mismo tiempo que los otros círculos */
-        background-color: white;
-        /* Fondo blanco para que el texto sea legible */
-        /* La transformación inicial se maneja en la animación */
-        transform: translateY(-50%) translateX(100vw);
-        z-index: 10;
-        /* Asegura que esté por encima de los círculos */
+
     }
 
     .container-card {
@@ -1353,36 +1186,37 @@ input[type="radio"]:checked + .theme-label {
 
 /* Celular Vertical */
 @media (max-width: 767px) and (orientation: portrait) {
+    .telefono {
+        display: none !important;
+    }
 
-   /*contacto*/
+    /*contacto*/
     .contact-container {
-    grid-template-columns: 360px;
-    row-gap: 3rem;
-  }
+        grid-template-columns: 360px;
+        row-gap: 3rem;
+    }
 
 }
 
 /* Celular Horizontal */
 @media (max-width: 915px) and (orientation: landscape) {
-    .ciculo-foto {
-        width: 22rem;
-        height: 22rem;
-        /* Asegura que la imagen cubra todo el círculo */
-        background-position: center;
-        /* Centra la imagen dentro del círculo */
-        /* background-color: yellow; */
-        border: 15px solid #F1C50E;
-        top: 40%;
-        left: -50%;
-
+    .telefono {
+        display: none !important;
     }
+
+    .carousel-inner {
+        width: 20rem;
+        bottom: 4%;
+        left: 28%;
+    }
+
 
     .anuncio {
         display: block;
         top: 90%;
         width: 80%;
         left: 48%;
-        animation-name: appear;
+        transform: translateX(-50%);
     }
 
     .anuncio-baner {
@@ -1404,49 +1238,17 @@ input[type="radio"]:checked + .theme-label {
 
 /* Tablet Vertical */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .ciculo-foto {
-        width: 15rem;
-        height: 15rem;
-        /* Asegura que la imagen cubra todo el círculo */
-        background-position: center;
-        /* Centra la imagen dentro del círculo */
-        /* background-color: yellow; */
-        border: 15px solid #F1C50E;
-        top: 35%;
-        left: -53%;
 
+
+    .telefono {
+        display: none !important;
     }
 
-    @keyframes move-right-mobile {
-        from {
-            transform: translate(0, -50%);
-        }
-
-        to {
-            transform: translate(calc(50vw - 50% + 30vw), -50%);
-        }
-    }
-
-    .anuncio {
-        position: absolute;
-        width: 87%;
-        /* Ancho del cuadro de anuncio */
-        padding: 1rem;
-        top: 98%;
-        left: -38%;
-        border-radius: 25px;
-        opacity: 0;
-        /* Empieza invisible */
-        animation: appear-from-right 0.8s ease-out forwards;
-        /* Usa la nueva animación*/
-        animation-delay: 3s;
-        /* Empieza al mismo tiempo que los otros círculos */
-        background-color: white;
-        /* Fondo blanco para que el texto sea legible */
-        /* La transformación inicial se maneja en la animación */
-        transform: translateY(-50%) translateX(100vw);
-        z-index: 10;
-        /* Asegura que esté por encima de los círculos */
+    .carousel-inner {
+        width: 30rem;
+        height: 30rem;
+        bottom: 4%;
+        left: 15%;
     }
 
     .container-card {
@@ -1500,9 +1302,9 @@ input[type="radio"]:checked + .theme-label {
 
     /*contacto*/
     .container {
-    margin-left: var(--mb25);
-    margin-right: var(--mb25);
-  }
+        margin-left: var(--mb25);
+        margin-right: var(--mb25);
+    }
 
 }
 
@@ -1512,18 +1314,12 @@ input[type="radio"]:checked + .theme-label {
     .telefono {
         display: none !important;
     }
-
-    .ciculo-foto {
-        width: 20rem;
-        height: 20rem;
-        /* Asegura que la imagen cubra todo el círculo */
-        background-position: center;
-        /* Centra la imagen dentro del círculo */
-        /* background-color: yellow; */
-        border: 15px solid #F1C50E;
-        top: 35%;
-        left: -48%;
-
+    
+    .carousel-inner {
+        width: 30rem;
+        height: 30rem;
+        bottom: 4%;
+        left: 25%;
     }
 
     .anuncio {
@@ -1531,7 +1327,7 @@ input[type="radio"]:checked + .theme-label {
         top: 80%;
         width: 60%;
         left: 48%;
-        animation-name: appear;
+        transform: translateX(-50%);
     }
 
 }
@@ -1540,72 +1336,21 @@ input[type="radio"]:checked + .theme-label {
 
 /* Notebook Horizontal */
 @media (min-width: 1281px) and (orientation: landscape) {
-    .ciculo-foto {
-        width: 38rem;
-        height: 38rem;
-        /* Asegura que la imagen cubra todo el círculo */
-        background-position: center;
-        /* Centra la imagen dentro del círculo */
-        /* background-color: yellow; */
-        border: 15px solid #F1C50E;
-        top: 75%;
-        left: -48%;
-    }
 
-    .ciculo-foto::after {
-        width: 10rem;
-        height: 10rem;
-
-        /* Un tono de amarillo dorado */
-        bottom: -10%;
+    .carousel-inner {
+        width: 45rem;
+        height: 45rem;
+        bottom: 4%;
         left: 25%;
-
     }
-
-    #circle1::after {
-
-        width: 10rem;
-        height: 10rem;
-        top: 7%;
-        left: 68%;
-    }
-
-
-    #circle2::after {
-
-        width: 10rem;
-        height: 10rem;
-        bottom: 50%;
-        left: 15%;
-    }
-
-    #circle3::after {
-
-        width: 10rem;
-        height: 10rem;
-        bottom: -35%;
-        left: 80%;
-    }
-
-    #circle4::after {
-
-        width: 12rem;
-        height: 12rem;
-        bottom: -30%;
-        left: 10%;
-
-    }
-
-
 
     .anuncio {
         display: block;
         width: 30%;
         top: 110%;
         left: 60%;
-        animation-name: appear;
+        transform: translateX(-50%);
     }
-
 
     .card {
         margin-top: 8rem;

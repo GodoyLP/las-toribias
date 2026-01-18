@@ -7,6 +7,7 @@ import Toribia_2 from "./components/Toribia_2.jsx"
 import PreguntasFrecuentes from "./components/PreguntasFrecuentes.jsx"  
 import QuienesSomos from "./components/QuienesSomos.jsx"
 import Contacto from "./components/Contacto.jsx"
+import BotonWhatsapp from "./components/BotonWhatsapp.jsx"
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     
       <>
         <Navbar />
+        <BotonWhatsapp />
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/toribia-1" element={<Toribia_1 />} />
