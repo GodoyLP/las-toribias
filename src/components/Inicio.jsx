@@ -4,7 +4,7 @@ import piletaParque from '../imagenes/parque/pileta-T1.webp';
 import fachadaToribia2 from '../imagenes/toribia-2/fachada-T2.webp';
 import arroyo1 from '../imagenes/fotos/arroyo1.webp';
 import caminar from '../imagenes/fotos/caminar-merlo.webp';
-import vistaCaballo from '../imagenes/fotos/merlo.jpg';
+import merloAtardercer from '../imagenes/fotos/cartelAtardecer_3.png';
 
 
 
@@ -26,7 +26,7 @@ const Inicio = () => {
                                 <img src={arroyo1} class="d-block w-100" alt="..." />
                             </div>
                             <div class="carousel-item">
-                                <img src={vistaCaballo} class="d-block w-100" alt="..." />
+                                <img src={merloAtardercer} class="d-block w-100" alt="..." />
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -37,6 +37,9 @@ const Inicio = () => {
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
+
+
+                        
                     </div>
 
 
@@ -46,7 +49,7 @@ const Inicio = () => {
                         <h5 className="text-left ">Merlo San Luis</h5>
                         <p className="text-left">Tu combinación ideal de naturaleza, tranquilidad y actividades al aire libre. ¡Prepará las valijas y animate! </p>
                         <div className="text-center">
-                            <button type="button" className="btn btn-outline-warning border rounded-pill p-2">Reserva tu lugar</button>
+                            <button type="button" className="btn btn-outline-warning border rounded-pill p-2 btn-blink">Reserva tu lugar</button>
                         </div>
                     </div>
                

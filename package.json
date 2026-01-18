@@ -13,7 +13,8 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-froala-wysiwyg": "^4.7.1",
-    "react-router-dom": "^7.9.3"
+    "react-router-dom": "^7.9.3",
+    "sweetalert2": "^11.26.17"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
