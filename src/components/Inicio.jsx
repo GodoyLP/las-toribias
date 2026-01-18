@@ -1,4 +1,5 @@
-
+import { Link, NavLink } from 'react-router-dom';
+import React from 'react';
 import fachadaToribia1 from '../imagenes/toribia-1/fachada_T1.webp';
 import piletaParque from '../imagenes/parque/pileta-T1.webp';
 import fachadaToribia2 from '../imagenes/toribia-2/fachada-T2.webp';
@@ -60,7 +61,7 @@ const Inicio = () => {
                 <div className="container-card  d-flex justify-content-evenly ">
                     <div className="card">
                         <h2 className="title">
-                            <a href="#">Toribia I</a>
+                            <NavLink  to="/toribia-1">Toribia I</NavLink>
                         </h2>
                         <p className="text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
@@ -68,14 +69,17 @@ const Inicio = () => {
                         <div className="imgBox">
                             <img src={fachadaToribia1} alt="Fachada canbaña toribia 1" />
                             <div className="img-blur">
-                                <a href="/toribia-1">Visitar </a>
+
+                                    <NavLink  to="/toribia-1">Visitar</NavLink>
+                                
                             </div>
                         </div>
 
                     </div>
                     <div className="card">
                         <h2 className="title">
-                            <a href="#">Jardin</a>
+                             <NavLink  to="/contacto">Jardin</NavLink>
+                            
                         </h2>
                         <p className="text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, repudiandae. Lorem.
@@ -83,7 +87,7 @@ const Inicio = () => {
                         <div className="imgBox">
                             <img src={piletaParque} alt="Pileta jardin" />
                             <div className="img-blur">
-                                <a href="#">Visitar </a>
+                                <a href="/contacto">Visitar </a>
                             </div>
                         </div>
 
@@ -91,7 +95,8 @@ const Inicio = () => {
 
                     <div className="card">
                         <h2 className="title">
-                            <a href="#">Toribia II </a>
+                             <NavLink  to="/toribia-2">Toribia II</NavLink>
+                            
                         </h2>
                         <div className="bg-gray-500"></div>
                         <p className="text">
@@ -100,7 +105,8 @@ const Inicio = () => {
                         <div className="imgBox">
                             <img src={fachadaToribia2} alt="Fachada canbaña toribia 2" />
                             <div className="img-blur">
-                                <a href="/toribia-2">Visitar </a>
+                                <NavLink  to="/toribia-2">Visitar</NavLink>
+                                
                             </div>
                         </div>
 

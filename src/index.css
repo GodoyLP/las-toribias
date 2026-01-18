@@ -1122,7 +1122,8 @@ input[type="radio"]:checked+.theme-label {
 
 /* --- CELULAR --- */
 
-@media screen and (max-width: 350px) {
+/*
+@media screen and (max-width: 360px) {
     .carousel-inner {
         width: 14rem;
         height: 14rem;
@@ -1135,7 +1136,7 @@ input[type="radio"]:checked+.theme-label {
      .anuncio {
         position: absolute;
         width: 87%;
-        /* Ancho del cuadro de anuncio */
+        /* Ancho del cuadro de anuncio 
         padding: 1rem;
         top: 52%;
         left: 7%;
@@ -1153,8 +1154,48 @@ input[type="radio"]:checked+.theme-label {
         grid-template-columns: 1fr;
     }
 
-}
+        toribia 1 y toribia 2 
 
+    .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        bottom: 0;
+        margin-left: 8px;
+    }
+
+    .img {
+        width: 300x;
+        height: 290px;
+    }
+
+    .mini-img {
+       
+        width: 40px;
+        height: 35px;
+        border: 2px solid #F1C50E;
+        margin-top: -20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .img-toribia {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .text-toribia {
+        font-size: 1rem;
+    }
+
+    .text-toribia-titulo {
+        font-size: 1.2rem;
+    }
+
+}
+*/
 
 /* Celular pequeño Vertical */
 @media (max-width: 488px) and (orientation: portrait) {
@@ -1191,14 +1232,13 @@ input[type="radio"]:checked+.theme-label {
     }
 
     .img {
-        width: 350px;
+        width: 300px;
         height: 290px;
     }
 
     .mini-img {
-       
-        width: 40px;
-        height: 35px;
+        width: 38px;
+        height: 38px;
         border: 2px solid #F1C50E;
         margin-top: -20px;
         margin-left: 0px;
