@@ -107,11 +107,14 @@ body {
 }
 
 @keyframes blink-animation {
-    0%, 100% {
+
+    0%,
+    100% {
         background-color: transparent;
         color: #F2B705;
         border-color: #F2B705;
     }
+
     50% {
         background-color: #F2B705;
         color: black;
@@ -719,7 +722,7 @@ li {
 
 .carrusel-toribia {
     padding: 20px;
-    margin-top:2%;
+    margin-top: 2%;
     margin-top: 3%;
 }
 
@@ -1116,6 +1119,19 @@ input[type="radio"]:checked+.theme-label {
 
 }
 
+/* ubucacucion icono en mapa */
+.ubic-toribia-2 {
+
+
+    position: "absolute",
+        top: "32%", 
+        left: "76%",
+        transform: "translate(-50%, -50%)", 
+        width: "50px", 
+        zIndex: 10
+}
+
+
 /************************************************/
 /*       NUEVA ESTRUCTURA DE MEDIA QUERIES      */
 /************************************************/
@@ -1275,7 +1291,7 @@ input[type="radio"]:checked+.theme-label {
         row-gap: 3rem;
     }
 
-    
+
 
 }
 
@@ -1378,10 +1394,10 @@ input[type="radio"]:checked+.theme-label {
         border-radius: 70%;
     }
 
-  .nav-arrow {
+    .nav-arrow {
         margin-left: 5px;
         margin-left: 5px;
-        
+
     }
 
     .img-toribia {

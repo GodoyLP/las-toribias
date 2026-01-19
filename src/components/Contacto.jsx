@@ -1,13 +1,15 @@
 import { useState } from "react";
 
-const mapa1 = "https://www.google.com/maps/d/embed?mid=1scLHVPTD-4yGy2-BxTSUUjRayKeJ6tc&ehbc=2E312F&noprof=1"
-const mapa2 = "https://www.google.com/maps/d/embed?mid=1oo0dlM4UWhCpIV1ba3YCOj3hY4TCCgw&hl=es-419&ehbc=2E312F"
-
+const mapa1 = "https://maps.app.goo.gl/TRnTwACJFTQLhcZx8"
+const mapa2 = "https://maps.app.goo.gl/ZGczrFNgkm35V6KR7"
+import mapaToribia from '../imagenes/fotos/mapa-toribia.png';
+import ubicacion1 from '../imagenes/iconos/gif/ubicacion.gif';
+import ubicacion2 from '../imagenes/iconos/gif/ubicacion.gif';
 
 
 const Contacto = () => {
     const [enviado, setEnviado] = useState(false);
-    const [mapaActual, setMapaActual] = useState(mapa1);
+    {/*} const [mapaActual, setMapaActual] = useState(mapa1);*/ }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -70,14 +72,6 @@ const Contacto = () => {
             }
         } catch (error) {
             console.error("Error al enviar:", error);
-        }
-    };
-
-    const vermapa = (valor) => {
-        if (valor === 1) {
-            setMapaActual(mapa1);
-        } else {
-            setMapaActual(mapa2);
         }
     };
 
@@ -154,22 +148,46 @@ const Contacto = () => {
                     </div>
                 </div>
                 <h3>Como llegar</h3>
+                <p>Elija donde quier llegar apretando el boton correspondiente</p>
                 <div className="contact-container container grid">
-                    
+
                     <div className="contact-content ">
-                        <p>Elija donde quier llegar apretando el boton correspondiente</p>
-                        <button className="btn btn-warning m-2" onClick={() => vermapa(1)}>Las Toribias I</button>
-                        <button className="btn btn-warning m-2" onClick={() => vermapa(2)}>Las Toribias II</button>
+                        
+                        <button className="btn btn-warning m-2" onClick={() => window.open(mapa1, '_blank')}>Las Toribias I</button>
+                        <button className="btn btn-warning m-2" onClick={() => window.open(mapa2, '_blank')}>Las Toribias II</button>
                     </div>
-                    
+
                     <div className="contact-content ">
+                        <div className="contact-content " style={{ position: "relative" }}>
+                            <img
+                                src={ubicacion1}
+                                onClick={() => window.open(mapa1, '_blank')}
+                                alt="Ubicación"
+                                style={{
+                                    position: "absolute",
+                                    top: "30%", // Ajusta este porcentaje para mover verticalmente
+                                    left: "85%", // Ajusta este porcentaje para mover horizontalmente
+                                    transform: "translate(-50%, -50%)", // Centra el icono en la coordenada
+                                    width: "50px", // Tamaño del gif
+                                    zIndex: 10
+                                }}
+                            />
 
-                     
-
-                        <iframe
-                            src={mapaActual}
-                            width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            <img
+                                src={ubicacion2}
+                                onClick={() => window.open(mapa2, '_blank')}
+                                alt="Ubicación"
+                                style={{
+                                    position: "absolute",
+                                    top: "32%", // Ajusta este porcentaje para mover verticalmente
+                                    left: "76%", // Ajusta este porcentaje para mover horizontalmente
+                                    transform: "translate(-50%, -50%)", // Centra el icono en la coordenada
+                                    width: "50px", // Tamaño del gif
+                                    zIndex: 10
+                                }}
+                            />
+                            <img src={mapaToribia} alt="Mapa de como llegar a las toribias" style={{ width: "100%" }} />
+                        </div>                   
                     </div>
                 </div>
             </section>
